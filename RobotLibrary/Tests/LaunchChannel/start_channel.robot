@@ -13,7 +13,7 @@ ${sideload}=  G:/GlobalHitss/Roku/Clarovideo_Roku/canal/rokub0.zip
 
 *** Test Cases ***
 Channel is launched
-    Side load  ${sideload}   rokudev   1234
+    Side load  ${sideload}   rokudev   5478
     Verify is screen loaded    ${ElementParams}
 
 
