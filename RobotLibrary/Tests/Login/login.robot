@@ -6,9 +6,6 @@ Library   Collections
 Resource   ./../Utilities/keywords.robot
 Resource   ./../Utilities/variables.robot
 
-Test Setup       Open Application    App A
-Test Teardown    Close Application
-
 *** Variables ***
 
 
@@ -16,19 +13,20 @@ Test Teardown    Close Application
 #Setup
 Channel is launched
     Side load  ${sideload}   rokudev   1234
-
+    #Verificación
     ${element}=   Element identifier   attr   name   btnLogin
     Verify is screen loaded   ${element}
 
 Access the login
+    Comment   Entrar al usuario
     Send key  Select  1
     Send key  Select  1
-
+    Comment   Ingresar el usuario
     Enter username   ${userMail}
-
+    Comment   Entrar en contraseña
     Send key  Down   1
     Send key  Select  1
-
+    Comment
     Enter password   ${pass}
 
     Send key  Down   1

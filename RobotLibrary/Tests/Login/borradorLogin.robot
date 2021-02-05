@@ -8,6 +8,7 @@ Library   BuiltIn
 Resource   ./../Utilities/keywords.robot
 Resource   ./../Utilities/variables.robot
 
+#Probando Setup
 Test Setup       Launch channel
 
 *** Variables ***
