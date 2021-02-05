@@ -10,10 +10,11 @@ ${channel_code}  dev
 @{ElementArray}=    &{ElementData}
 &{ElementParams}    elementData=${ElementArray}
 ${sideload}=  G:/GlobalHitss/Roku/Clarovideo_Roku/canal/rokub0.zip
+${passsroku}=   1234
 
 *** Test Cases ***
 Channel is launched
-    Side load  ${sideload}   rokudev   1234
+    Side load  ${sideload}   rokudev   ${passsroku}
     Verify is screen loaded    ${ElementParams}
 
 
