@@ -19,7 +19,8 @@ Channel is launched
     Verify is screen loaded   ${element}
 
 Access the login
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Seleeccionar input "Usuario"
     Send key  Select  1
@@ -50,7 +51,8 @@ Logout
     Verify is screen loaded   ${element}
 
 Login with an invalid user
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Seleeccionar input "Usuario"
     Send key  Select  1
@@ -71,7 +73,8 @@ Login with an invalid user
     Exit error message
 
 Login with an invalid password
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Seleeccionar input "Usuario"
     Send key  Select  1
@@ -92,7 +95,8 @@ Login with an invalid password
     Exit error message
 
 Login with an invalid user and password
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Seleeccionar input "Usuario"
     Send key  Select  1
@@ -113,7 +117,8 @@ Login with an invalid user and password
     Exit error message
 
 Login with empty password
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Seleeccionar input "Usuario"
     Send key  Select  1
@@ -130,7 +135,8 @@ Login with empty password
     Exit error message
 
 Login with empty user
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Ubicar y seleccionar input "Password"
     Send key  Down   1
@@ -147,7 +153,8 @@ Login with empty user
     Exit error message
 
 Login with empty user and password
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down   1
@@ -160,7 +167,8 @@ Login with empty user and password
     Exit error message
 
 Reopen with active sesion
-    Comment   Seleccionar boton "Inicia Sesion"
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
     Send key  Select  1
     Comment   Seleeccionar input "Usuario"
     Send key  Select  1
@@ -181,10 +189,4 @@ Reopen with active sesion
     Comment   Verificar si el elemento "Salir" del menú provisorio se visualiza en pantalla
     ${element}=   Element identifier   attr   name   m5
     Verify is screen loaded   ${element}
-
-*** Keywords ***
-Exit error message
-    Send key  Select  1
-    Send key  Down   1
-    Send key  Select  1
 
