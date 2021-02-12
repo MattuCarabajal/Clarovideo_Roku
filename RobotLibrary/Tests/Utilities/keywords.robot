@@ -87,3 +87,13 @@ Assert Equal
     [Arguments]   ${value}   ${reference}
     ${result}   Should Be Equal   ${value}   ${reference}
     [Return]   ${result}
+
+Open channel
+    Launch the channel   ${channel_code}
+    Sleep   3
+
+Access Registration
+    Open channel
+    Send key   Select
+
+

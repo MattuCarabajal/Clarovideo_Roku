@@ -22,6 +22,7 @@ from robot.api import logger
 import subprocess
 import json
 from datetime import datetime, timedelta
+from random import randint
 
 class RobotLibrary:
 
@@ -280,3 +281,12 @@ class RobotLibrary:
     def converMail(self, userMail):
         userMailArray = userMail.split("@")
         return userMailArray
+
+
+    @keyword("Create mail")
+    def crearMail(self):
+        basemail = "mailRegistro"
+        aleatorio = str(randint(0, 99999999))
+        finmail = "@gmail.com"
+        mailRegister = str(basemail + aleatorio + finmail)
+        return mailRegister

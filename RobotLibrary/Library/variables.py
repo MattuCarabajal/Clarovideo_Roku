@@ -16,8 +16,8 @@
 
 def get_variables():
    variables = {
-       'ip_address': '192.168.0.200',
-       'server_path': 'G:/GlobalHitss/Roku/Clarovideo_Roku/src/main.exe',
+       'ip_address': '192.168.100.2',
+       'server_path': 'C:/Users/rjrodriguez/Documents/Rokub0/Clarovideo_Roku/src/main.exe',
        'timeout':  20000,
        'pressDelay': 2000
    }
