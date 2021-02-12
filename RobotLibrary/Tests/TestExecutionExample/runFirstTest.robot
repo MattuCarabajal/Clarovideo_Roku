@@ -1,19 +1,13 @@
 *** Settings ***
-Documentation  Launch channel
+Documentation    Test Execution Example
 Variables   ./../../Library/variables.py
 Library   ./../../Library/RobotLibrary.py  ${ip_address}  ${timeout}  ${pressDelay}  ${server_path}
-Library   Collections
 Resource   ./../Utilities/keywords.robot
 Resource   ./../Utilities/variables.robot
 
-*** Variables ***
-
-
 *** Test Cases ***
-Channel is launched
-    Comment   Sidelodear canal
-    Side load  ${sideload}   rokudev   1234
-    #Launch The Channel   ${channel_code}
-    Comment   Verificar que accedio a la landing del canal
+First test executed
+    Side load   ${sideload}   ${channel_user}   ${channel_pass}
+
     ${element}=   Element identifier   attr   name   btnLogin
     Verify is screen loaded   ${element}

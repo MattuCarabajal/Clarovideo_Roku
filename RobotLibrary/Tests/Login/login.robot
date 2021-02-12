@@ -18,37 +18,14 @@ Channel is launched
     ${element}=   Element identifier   attr   name   btnLogin
     Verify is screen loaded   ${element}
 
-Access the login
+03_0001_LOGIN-Visualizar_objeto_titulo_Inicia_sesion
     Comment   Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down   1
     Send key  Select  1
-    Comment   Seleeccionar input "Usuario"
-    Send key  Select  1
-    Comment   Ingresar usuario
-    Enter username   ${userMail}
-    Comment   Ubicar y seleccionar input "Password"
-    Send key  Down   1
-    Send key  Select  1
-    Comment   Ingresar contraseña
-    Enter password   ${pass}
-    Comment   Ubicar y seleccionar botón "Inicia Sesion"
-    Send key  Down   1
-    Send key  Select  1
-    Comment   Verificar si el elemento "Salir" del menú provisorio se visualiza en pantalla
-    ${element}=   Element identifier   attr   name   m5
+    Comment   Verificar si el elemento título se visualiza en pantalla
+    ${element}=   Element identifier   attr   name   title
     Verify is screen loaded   ${element}
-
-Logout
-    Comment   Desplazar hasta el elemento "Salir" del menú provisorio y seleccionarlo
-    Send key  Right   1
-    Set press delay   1000
-    Send key  Right   1
-    Send key  Right   1
-    Send key  Right   1
-    Send key  Select  1
-    Comment   Verificar si el elemento "Inicia Sesion" de la pantalla Launch se visualiza en pantalla
-    ${element}=   Element identifier   attr   name   btnLogin
-    Verify is screen loaded   ${element}
+    Send key   Back
 
 Login with an invalid user
     Comment   Ubicar y seleccionar botón "Inicia Sesion"
@@ -190,3 +167,34 @@ Reopen with active sesion
     ${element}=   Element identifier   attr   name   m5
     Verify is screen loaded   ${element}
 
+Access the login
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
+    Send key  Select  1
+    Comment   Seleeccionar input "Usuario"
+    Send key  Select  1
+    Comment   Ingresar usuario
+    Enter username   ${userMail}
+    Comment   Ubicar y seleccionar input "Password"
+    Send key  Down   1
+    Send key  Select  1
+    Comment   Ingresar contraseña
+    Enter password   ${pass}
+    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    Send key  Down   1
+    Send key  Select  1
+    Comment   Verificar si el elemento "Salir" del menú provisorio se visualiza en pantalla
+    ${element}=   Element identifier   attr   name   m5
+    Verify is screen loaded   ${element}
+
+Logout
+    Comment   Desplazar hasta el elemento "Salir" del menú provisorio y seleccionarlo
+    Send key  Right   1
+    Set press delay   1000
+    Send key  Right   1
+    Send key  Right   1
+    Send key  Right   1
+    Send key  Select  1
+    Comment   Verificar si el elemento "Inicia Sesion" de la pantalla Launch se visualiza en pantalla
+    ${element}=   Element identifier   attr   name   btnLogin
+    Verify is screen loaded   ${element}
