@@ -17,7 +17,3 @@ Resource   ./../Utilities/variables.robot
 Probando crear mail
 
     ${newmail}=   Create mail
-
-
-
-
