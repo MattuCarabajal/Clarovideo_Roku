@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Basic smoke tests
+Documentation  Launch channel
 Variables   ./../../Library/variables.py
 Library   ./../../Library/RobotLibrary.py  ${ip_address}  ${timeout}  ${pressDelay}  ${server_path}
 Library   Collections
@@ -16,5 +16,3 @@ Channel is launched
     Comment   Verificar que accedio a la landing del canal
     ${element}=   Element identifier   attr   name   btnLogin
     Verify is screen loaded   ${element}
-
-
