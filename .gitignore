@@ -2,5 +2,7 @@
 .idea/
 variables.py
 canal/rokub0.zip
+borradorlogin.robot
+pruebas.robot
 src/main.exe
 RobotLibrary/Library/__pycache__/
