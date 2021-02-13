@@ -6,6 +6,8 @@
 
 On this document is explained step by step how to install and execute a suit of test cases, with the rokub0-qa repositorie, for the Roku's ClaroVideo channel.
 
+First be sure that you have enabled developer settings in your Roku device ([Instructions to enable developer settings](Configure Roku Device.md)).
+
 ## Getting started
 
 To build, configure, and test the [Roku WebDriver](https://developer.roku.com/docs/developer-program/dev-tools/automated-channel-testing/web-driver.md), follow these steps:  
@@ -54,8 +56,18 @@ To build, configure, and test the [Roku WebDriver](https://developer.roku.com/do
 
    e. Open the **<path>/RobotLibrary/Library/variables.py** file and edit the ip of your roku device and the directory of your **main.exe** file created on step 4.
 
-        'ip_address': '192.168.0.5',
-        'server_path': 'C:/Roku/QA/rokub0-qa/src/main.exe',
+   ```python
+    'ip_address': '192.168.0.5',
+    'server_path': 'C:/Roku/QA/rokub0-qa/src/main.exe',
+   ```
+
+9. Open the **<path>/RobotLibrary/Tests/Utilities/variables.robot** file and edit the variables **${roku_user}** **${roku_pass}**; replacing rokudev and 1234 with your's roku device user and password, of the developer user (created when configuring the roku device), as shown in the example below.
+
+   ```
+   #Usuario y contraseña del usuario dev
+   ${roku_user}   rokudev
+   ${roku_pass}   1234
+   ```
 
 ### Installing and testing the Robot Framework Library 
 

@@ -5,7 +5,7 @@ ${sideload}=  ./../../../canal/rokub0.zip
 #Código del canal
 ${channel_code}  dev
 
-#Usurio y contraseña del usuario dev
+#Usuario y contraseña del usuario dev
 ${roku_user}   rokudev
 ${roku_pass}   1234
 
