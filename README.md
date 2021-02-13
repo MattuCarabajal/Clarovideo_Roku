@@ -6,7 +6,7 @@
 
 On this document is explained step by step how to install and execute a suit of test cases, with the rokub0-qa repositorie, for the Roku's ClaroVideo channel.
 
-First be sure that you have enabled developer settings in your Roku device ([Instructions to enable developer settings](Configure Roku Device.md)).
+First be sure that you have enabled developer settings in your Roku device ([Instructions to enable developer settings](ConfigureRokuDevice.md)).
 
 ## Getting started
 
