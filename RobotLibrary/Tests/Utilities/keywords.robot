@@ -99,3 +99,7 @@ Access Login
     Open channel
     Send Key   Down
     Send Key   Select
+
+Logout
+    Send key    *
+    Send key    Select

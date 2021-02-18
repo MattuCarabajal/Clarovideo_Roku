@@ -12,6 +12,7 @@ ${roku_pass}   1234
 #Usuarios
 ${userMail}=   qaroku_rebeca@gmail.com
 ${pass}=   Prueba1!
-${userNotValid}=   mailinexistente@gmail.com
+${userNotRegistered}=   mailinexistente@gmail.com
 ${passNotValid}=   123
-${passvalid}=    Prueba1!
+${passValid}=    Prueba1!
+${ValidMailForErrors}=   prueba_automatizada@gmail.com

@@ -28,13 +28,13 @@ Access the login
     #Ubicar y seleccionar input "Password"
     Send key  Down
     Send key  Select
-    #Ingresar contraseña
+    #Ingresar Contrasenia
     Enter password   ${pass}
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down
     Send key  Select
     #Verificar si el elemento "Opciones" del menú provisorio se visualiza en pantalla
-     ${element}=   Get element ${ParamsOpciones}
+    ${element}=   Get element ${ParamsOpciones}
     Verify is screen loaded   ${ParamsOpciones}
 
 #Logout
@@ -44,11 +44,11 @@ Login with an invalid user
     #Seleeccionar input "Usuario"
     Send key  Select
     #Ingresar usuario no valido
-    Enter username   ${userNotValid}
+    Enter username   ${userNotRegistered}
     #Ubicar y seleccionar input "Password"
     Send key  Down
     Send key  Select
-    #Ingresar contraseña
+    #Ingresar Contrasenia
     Enter password   ${pass}
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down
@@ -65,7 +65,7 @@ Login with an invalid password
     #Ubicar y seleccionar input "Password"
     Send key  Down
     Send key  Select
-    #Ingresar contraseña no valida
+    #Ingresar Contrasenia no valida
     Enter password   ${passNotValid}
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down
@@ -78,11 +78,11 @@ Login with an invalid user and password
     #Seleeccionar input "Usuario"
     Send key  Select
     #Ingresar usuario no valido
-    Enter username   ${userNotValid}
+    Enter username   ${userNotRegistered}
     #Ubicar y seleccionar input "Password"
     Send key  Down
     Send key  Select
-    #Ingresar contraseña no valida
+    #Ingresar Contrasenia no valida
     Enter password   ${passNotValid}
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down
@@ -108,7 +108,7 @@ Login with empty user
     #Ubicar y seleccionar input "Password"
     Send key  Down
     Send key  Select
-    #Ingresar contraseña
+    #Ingresar Contrasenia
     Enter password   ${pass}
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down
@@ -134,7 +134,7 @@ Reopen with active sesion
     #Ubicar y seleccionar input "Password"
     Send key  Down
     Send key  Select
-    #Ingresar contraseña
+    #Ingresar Contrasenia
     Enter password   ${pass}
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down

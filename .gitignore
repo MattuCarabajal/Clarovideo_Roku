@@ -6,3 +6,4 @@ borradorlogin.robot
 pruebas.robot
 src/main.exe
 RobotLibrary/Library/__pycache__/
+src/
