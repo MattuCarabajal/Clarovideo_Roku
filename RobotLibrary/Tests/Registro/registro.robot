@@ -3,26 +3,105 @@ Documentation   Suite Registro
 Variables   ./../../Library/variables.py
 Library   ./../../Library/RobotLibrary.py  ${ip_address}  ${timeout}  ${pressDelay}  ${server_path}
 Library   Collections
+#Library 	Screenshot  ./images
 Resource   ./../Utilities/keywords.robot
 Resource   ./../Utilities/variables.robot
 
-Test Setup    Access Registration
-
+#Suite Setup        Launch channel
+Test Setup          Access Registration
+Suite Teardown      Logout
 
 *** Test Cases ***
-
 02_0001_REGISTRO_Visualizar_objeto_Registrate
     #Verificar si el elemento título se visualiza en pantalla
     ${element}=   Element identifier   attr   name   title
     Verify is screen loaded   ${element}
 
-
-#No funka bien
 02_0002_REGISTRO_Visualizar_texto_Registrate
     #Verificar si el texto Registro se visualiza en pantalla
     ${text}=   Get attr    attr   name   title   text
     Assert Equal   ${text}  Regístrate
 
+02_0019_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_un_mail
+    #No se ingresda un mail
+    #Ubicar y seleccionar input "Password"
+    Send key            Down
+    Send key            Select
+    #Ingresar Contrasenia
+    Enter password      ${passValid}
+    #Buscar y aceptar Terminos y condiciones
+    Send key            Down
+    Send key            Select
+    #Ubicar y seleccionar botón "Siguiente"
+    Send key            Down
+    Send key            Select
+    #Verificar si la pantalla de error "Error ¡Lo sentimos!" se visualiza
+    ${element}=   Element identifier   attr   name   error
+    Verify is screen loaded     ${element}
+    Take Screenshot
+
+02_0022_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_una_contrasenia
+    #Seleccionar input "Correo electrónico"
+    Send key            Select
+    #Ingresar Correo electrónico
+    Enter username      ${ValidMailForErrors}
+    #No se ingresda una contrasenia
+    #Buscar y aceptar Terminos y condiciones
+    Send key            Down
+    Send key            Down
+    Send key            Select
+    #Ubicar y seleccionar botón "Siguiente"
+    Send key            Down
+    Send key            Select
+    #Verificar si la pantalla de error "Error ¡Lo sentimos!" se visualiza
+    ${element}=   Element identifier   attr   name   error
+    Verify is screen loaded     ${element}
+
+02_0021_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_tildar_terminos_y_condiciones
+    #Seleccionar input "Correo electrónico"
+    Send key            Select
+    #Ingresar Correo electrónico
+    Enter username      ${ValidMailForErrors}
+    #Ubicar y seleccionar input "Password"
+    Send key            Down
+    Send key            Select
+    #Ingresar Contrasenia
+    Enter password      ${passValid}
+    #No se aceptan los Términos y Condiciones
+    #Ubicar y seleccionar botón "Siguiente"
+    Send key            Down
+    Send key            Down
+    Send key            Select
+    #Verificar si la pantalla de error "Error (!) No aceptó los Términos y Condiciones." se visualiza
+    ${element}=   Element identifier   attr   name   error
+    Verify is screen loaded     ${element}
+
+02_0024_REGISTRO_Verificar_el_error_al_intentar_registrarse_con_todos_los_campos_vacios
+    #No se ingresda un mail
+    #No se ingresda una contrasenia
+    #No se aceptan los Términos y Condiciones
+    #Ubicar y seleccionar botón "Siguiente"
+    Send key            Down
+    Send key            Down
+    Send key            Down
+    Send key            Select
+    #Verificar si la pantalla de error "Error (!) No aceptó los Términos y Condiciones." se visualiza
+    ${element}=   Element identifier   attr   name   error
+    Verify is screen loaded     ${element}
+
+02_0030_REGISTRO_Verificar_error_al_intentar_registrarse_con_campos_usuario_y_contrasenias_vacios
+    #No se ingresda un mail
+    #No se ingresda una contrasenia
+    #Buscar y aceptar Terminos y condiciones
+    Send key            Down
+    Send key            Down
+    Send key            Select
+    #Ubicar y seleccionar botón "Siguiente"
+    Send key            Down
+    Send key            Select
+    #Verificar si la pantalla de error "Error ¡Lo sentimos!" se visualiza
+    ${element}=   Element identifier   attr   name   error
+    Verify is screen loaded     ${element}
 
 02_0029_REGISTRO_Verificar_el_correcto_registro_con_datos_validos
     #Seleccionar campo mail
@@ -30,11 +109,11 @@ Test Setup    Access Registration
     #Introducir mail
     ${mailcreate}=   Create mail
     Enter username    ${mailcreate}
-    #Seleccionar campo contraseña
+    #Seleccionar campo Contrasenia
     Send Key   Down
     Send Key   Select
-    #Introducir contraseña
-    Enter password    ${passvalid}
+    #Introducir Contrasenia
+    Enter password    ${passValid}
     #Aceptar Terminos y condiciones
     Send Key   Down
     Send Key   Select
@@ -44,4 +123,3 @@ Test Setup    Access Registration
     #Verificar si entro a la home
     ${texto}    Element identifier by text   text   Opciones
     Verify is screen loaded   ${texto}
-

@@ -11,8 +11,8 @@ Resource   ./../Utilities/variables.robot
 
 *** Test Cases ***
 Channel is launched
-    Comment   Sidelodear canal
-    Side load  ${sideload}   rokudev   1234
-    Comment   Verificar que accedio a la landing del canal
+    #Sidelodear canal
+    Side load  ${sideload}   ${roku_user}   ${roku_pass}
+    #Verificar que accedio a la landing del canal
     ${element}=   Element identifier   attr   name   btnLogin
     Verify is screen loaded   ${element}

@@ -12,7 +12,13 @@ Test Setup       Launch channel
 
 
 *** Test Cases ***
-Landing's title is available
+01_0001_Verify_channel_is_launched
+    Side load   ${sideload}   ${channel_user}   ${channel_pass}
+
+    ${element}=   Element identifier   attr   name   btnLogin
+    Verify is screen loaded   ${element}
+
+#Landing's title is available
 
 
 Landing's title show correct text

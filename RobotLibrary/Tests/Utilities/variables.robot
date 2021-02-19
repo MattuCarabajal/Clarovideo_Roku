@@ -5,13 +5,14 @@ ${sideload}=  ./../../../canal/rokub0.zip
 #Código del canal
 ${channel_code}  dev
 
-#Usurio y contraseña del usuario dev
-${channel_user}   rokudev
-${channel_pass}   1234
+#Usuario y contraseña del usuario dev
+${roku_user}   rokudev
+${roku_pass}   1234
 
 #Usuarios
 ${userMail}=   qaroku_rebeca@gmail.com
 ${pass}=   Prueba1!
-${userNotValid}=   fer@gmail.com
+${userNotRegistered}=   mailinexistente@gmail.com
 ${passNotValid}=   123
-${passvalid}=    Prueba1!
+${passValid}=    Prueba1!
+${ValidMailForErrors}=   prueba_automatizada@gmail.com

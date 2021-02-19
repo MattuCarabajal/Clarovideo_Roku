@@ -282,7 +282,6 @@ class RobotLibrary:
         userMailArray = userMail.split("@")
         return userMailArray
 
-
     @keyword("Create mail")
     def crearMail(self):
         basemail = "mailRegistro"

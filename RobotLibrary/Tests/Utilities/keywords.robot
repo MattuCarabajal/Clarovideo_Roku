@@ -3,7 +3,7 @@ Library   BuiltIn
 
 *** Keywords ***
 Launch channel
-    Side load  ${sideload}   ${channel_code}   ${channel_pass}
+    Side load  ${sideload}   ${roku_user}   ${roku_pass}
     ${element}=   Element identifier   attr   name   btnLogin
     Verify is screen loaded   ${element}
 
@@ -99,3 +99,7 @@ Access Login
     Open channel
     Send Key   Down
     Send Key   Select
+
+Logout
+    Send key    *
+    Send key    Select
