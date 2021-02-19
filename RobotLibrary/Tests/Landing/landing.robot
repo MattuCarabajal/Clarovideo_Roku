@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Landing
+Documentation   Suite Landing
 Variables   ./../../Library/variables.py
 Library   ./../../Library/RobotLibrary.py  ${ip_address}  ${timeout}  ${pressDelay}  ${server_path}
 Library   Collections

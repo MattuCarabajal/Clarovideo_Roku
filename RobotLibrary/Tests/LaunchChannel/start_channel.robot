@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Launch channel
+Documentation   Suite Launch channel
 Variables   ./../../Library/variables.py
 Library   ./../../Library/RobotLibrary.py  ${ip_address}  ${timeout}  ${pressDelay}  ${server_path}
 Library   Collections
