@@ -2,6 +2,9 @@
 Library   BuiltIn
 
 *** Keywords ***
+Si falla Screenshot
+    Run Keyword If Test Failed    Screenshot    ${EXECDIR}  ${TEST NAME}    ${roku_user}    ${roku_pass}
+
 Launch channel
     Side load  ${sideload}   ${roku_user}   ${roku_pass}
     ${element}=   Element identifier   attr   name   btnLogin

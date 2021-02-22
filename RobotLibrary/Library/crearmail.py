@@ -7,7 +7,7 @@ def cerosAntesDeUnTexto(texto, cantidad_final):
     return texto
 
 abrir_test= openpyxl.load_workbook('C:/Users/rjrodriguez/Documents/Test/tests_cases.xlsx')
-Hoja= abrir_test['Registro'] #Aqui va el nombre de la hoja
+Hoja= abrir_test['Registro1'] #Aqui va el nombre de la hoja
 A= Hoja['A']
 #print(A) #Imprimo el numero de celdas que contienen datos
 
@@ -15,10 +15,10 @@ seccion = input("Que sección es esta?: ").upper() #investigar para que seccion 
 numero_seccion = cerosAntesDeUnTexto(input("numero de seccion?: "),2)
 
 
-rango = range(1,41)  #Si hay 10 casos el rango llega hasta 11
+rango = range(1,52)  #Si hay 10 casos el rango llega hasta 11
 iterable_rango = iter(rango)
 
-for celda in Hoja['A2':'A40']: #A1 es el titulo de la columna y A10 el ultimo caso que se mostro en el print de la linea 6
+for celda in Hoja['A2':'A51']: #A1 es el titulo de la columna y A10 el ultimo caso que se mostro en el print de la linea 6
     valores= str(celda[0].value).split()
     casos_unidos= "_".join(valores)
     casos_listos= str(numero_seccion + "_" + cerosAntesDeUnTexto(str(next(iterable_rango)),4) + "_" + seccion + "_" + casos_unidos)

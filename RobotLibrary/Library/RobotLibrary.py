@@ -23,6 +23,7 @@ import subprocess
 import json
 from datetime import datetime, timedelta
 from random import randint
+import qa_functions as qa
 
 class RobotLibrary:
 
@@ -279,13 +280,12 @@ class RobotLibrary:
 
     @keyword("Convert mail")
     def converMail(self, userMail):
-        userMailArray = userMail.split("@")
-        return userMailArray
+        return qa.converMail(userMail)
 
     @keyword("Create mail")
     def crearMail(self):
-        basemail = "mailRegistro"
-        aleatorio = str(randint(0, 99999999))
-        finmail = "@gmail.com"
-        mailRegister = str(basemail + aleatorio + finmail)
-        return mailRegister
+        return qa.crearMail()
+
+    @keyword("Screenshot")
+    def screenshot(self, path, name, roku_user, roku_pass):
+        qa.screenshot(path, name, roku_user, roku_pass)
