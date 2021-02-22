@@ -23,23 +23,28 @@ To build, configure, and test the [Roku WebDriver](https://developer.roku.com/do
 4. Build the Roku WebDriver project:
 
 
-5.     cd <path>/src
-        go build main.go
-
-6. Test the Roku WebDriver server following these steps:
+5.      `cd <path>/src`
+        `go build main.go`
+6.     Test the Roku WebDriver server following these steps:
 
 
 7. a. Install the [**assert**](https://godoc.org/github.com/stretchr/testify/assert) package, which provides testing tools to be used with Go applications.
 
-        go get github.com/stretchr/testify/assert
+    ```go
+go get github.com/stretchr/testify/assert
+   ```
 
    b. Test the ECP client:
 
-        go test ecpClient
-
+   ```go
+ go test ecpClient
+   ```
+   
    c. Test the HTTP server (the host is "localhost"; the port used is 9000):
-
-        go test httpServer
+   
+   ```go
+    go test httpServer
+   ```
 
 
 8. Run Roku's Python-based sample WebDriver client application following these steps: 
@@ -50,15 +55,25 @@ To build, configure, and test the [Roku WebDriver](https://developer.roku.com/do
 
    c. Install the [**requests**](https://pypi.org/project/requests) HTTP library for Python, which enables the sample client application to send HTTP 1.1 requests:
 
-       python -m pip install requests
+   ```python
+   python -m pip install requests
+   ```
 
    d. Paste the latest version of the channel (**rokub0.zip**) in the **<path>/canal** directory.
 
-   e. Open the **<path>/RobotLibrary/Library/variables.py** file and edit the ip of your roku device and the directory of your **main.exe** file created on step 4.
+   e. Open the **<path>/RobotLibrary/Library/variables.py** file and edit the ip_roku variable with the ip of your roku device and the server_address parameter with the directory of your **main.exe** file created on step 4.
 
    ```python
-    'ip_address': '192.168.0.5',
-    'server_path': 'C:/Roku/QA/rokub0-qa/src/main.exe',
+   ip_roku = '192.168.0.200'
+   
+   def get_variables():
+      variables = {
+          'ip_address': ip_roku,
+          'server_path': 'C:/Roku/QA/rokub0-qa/src/main.exe',
+          'timeout':  20000,
+          'pressDelay': 2000
+      }
+      return variables
    ```
 
 9. Open the **<path>/RobotLibrary/Tests/Utilities/variables.robot** file and edit the variables **${roku_user}** **${roku_pass}**; replacing rokudev and 1234 with your's roku device user and password, of the developer user (created when configuring the roku device), as shown in the example below.
@@ -75,11 +90,13 @@ To install the [Roku Robot Framework Library](https://developer.roku.com/docs/de
 
 1. Install the dependencies listed in the **/rokub0/RobotLibrary/requirements.txt** file:
 
-        python -m pip install -r /RobotLibrary/requirements.txt
+    ```python
+    python -m pip install -r /RobotLibrary/requirements.txt
+    ```
 
 2. To execute Robot tests, you must run them from the **RobotLibrary/<section>** folder as demonstrated in the following example:
 
-    ```
+    ```python
     cd <path>/RobotLibrary/Test/TestExecutionExample
     python -m robot runFirstTest.robot
     ```
