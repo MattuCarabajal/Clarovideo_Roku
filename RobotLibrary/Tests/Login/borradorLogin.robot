@@ -7,13 +7,18 @@ Library   BuiltIn
 Resource   ./../Utilities/keywords.robot
 Resource   ./../Utilities/variables.robot
 
-#Probando Setup
-#Test Setup       Launch the channel
+Test Setup          Access login
+#Test Teardown       Si falla Screenshot
 
 *** Variables ***
 
 
 *** Test Cases ***
-Probando crear mail
+#03_0007_LOGIN_Verificar_placeholder_de_correo_electronico
+    #Verificar que el placeholder del input "Correo electrónico" sea "Correo electrónico"
+    #${text}=   Get attr   attr   name   user   text
+    #Assert Equal   ${text}   Correo electrónico
 
-    ${newmail}=   Create mail
+Open menu
+    Sleep 5
+    Send key    *
