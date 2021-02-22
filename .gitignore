@@ -1,9 +1,11 @@
 
 .idea/
 variables.py
-canal/rokub0.zip
+crearmail.py
+funciones.py
+tests_cases.xlsx
 borradorlogin.robot
+canal/rokub0.zip
 pruebas.robot
-src/main.exe
 RobotLibrary/Library/__pycache__/
 src/
