@@ -7,4 +7,4 @@ RobotLibrary/Library/test/login/pruebas.robot
 RobotLibrary/Library/pycache/
 RobotLibrary/Library/__pycache__/
 src/
-canal/
+canal/RobotLibrary/Library/crearmail.py
