@@ -4,6 +4,7 @@ import time
 from time import strftime
 from variables import ip_roku
 import os
+from random import randint
 
 def converMail(self, userMail):
     userMailArray = userMail.split("@")
