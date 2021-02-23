@@ -8,3 +8,7 @@ RobotLibrary/Library/pycache/
 RobotLibrary/Library/__pycache__/
 src/
 canal/RobotLibrary/Library/crearmail.py
+
+RobotLibrary/Tests/Login/geckodriver.log
+
+RobotLibrary/Library/crearmail.py
