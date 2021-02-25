@@ -6,9 +6,9 @@ Library         Collections
 Resource        ./../Utilities/keywords.robot
 Resource        ./../Utilities/variables.robot
 
-#Suite Setup   Launch channel
+Suite Setup     Launch channel
 Test Setup      Access and login
-#Test Teardown   Run if fails
+Test Teardown   Run if fails
 
 
 *** Test Cases ***
