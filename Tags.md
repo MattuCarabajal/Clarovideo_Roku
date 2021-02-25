@@ -11,18 +11,14 @@
 
 ## Tags existentes
 
-**Casos críticos**																Critical
+| Que es                                 | Tag           |
+| -------------------------------------- | ------------- |
+| **Casos críticos**                     | Critical      |
+| **Casos NO críticos**                  | NotCritical   |
+| **Ruta crítica**                       | CriticalRoute |
+| **Sprint (X es el número del Sprint)** | SprintX       |
+| **Caso incompleto**                    | Incompleto    |
+| **Textos Apa**                         | ApaText       |
+| **Casos negativos**                    | Negative      |
+| **Camino feliz**                       | HappyPath     |
 
-**Casos NO críticos**														 NotCritical
-
-**Ruta crítica**																	 CriticalRoute
-
-**Sprint (X es el número del Sprint)**							SprintX
-
-**Caso incompleto**														  Incompleto
-
-**Textos Apa**																	 ApaText
-
-**Casos negativos**														  Negative
-
-**Happy Path**																	HappyPath

@@ -11,21 +11,18 @@ Launch channel
     Verify is screen loaded   ${element}
 
 Login
-    Comment   Seleeccionar input "Usuario"
+    #Seleeccionar input "Usuario"
     Send key  Select  1
-    Comment   Ingresar usuario
+    #Ingresar usuario
     Enter username      ${userMail}
-    Comment   Ubicar y seleccionar input "Password"
+    #Ubicar y seleccionar input "Password"
     Send key  Down   1
     Send key  Select  1
-    Comment   Ingresar contraseña
+    #Ingresar contraseña
     Enter password   ${pass}
-    Comment   Ubicar y seleccionar botón "Inicia Sesion"
+    #Ubicar y seleccionar botón "Inicia Sesion"
     Send key  Down   1
     Send key  Select  1
-    Comment   Verificar si el elemento "Salir" del menú provisorio se visualiza en pantalla
-    ${element}=   Element identifier   attr   name   m5
-    Verify is screen loaded   ${element}
 
 Register
     #Seleccionar campo mail
