@@ -6,7 +6,7 @@ from variables import ip_roku
 import os
 from random import randint
 
-def converMail(self, userMail):
+def convertMail(userMail):
     userMailArray = userMail.split("@")
     return userMailArray
 

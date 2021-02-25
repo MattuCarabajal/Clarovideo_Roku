@@ -1,13 +1,23 @@
+
 .idea/
+
 RobotLibrary/Library/variables.py
+
 RobotLibrary/Library/funciones.py
+
 RobotLibrary/Library/tests_cases.xlsx
+
 RobotLibrary/Library/test/login/borradorlogin.robot
+
+RobotLibrary/Library/test/Registro/borrador_registro.robot
+
 RobotLibrary/Library/test/login/pruebas.robot
+
 RobotLibrary/Library/pycache/
+
 RobotLibrary/Library/__pycache__/
+
 src/
-canal/RobotLibrary/Library/crearmail.py
 
 RobotLibrary/Tests/Login/geckodriver.log
 
