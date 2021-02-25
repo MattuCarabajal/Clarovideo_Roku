@@ -11,18 +11,18 @@
 
 ## Tags existentes
 
-Casos críticos															   Critical
+**Casos críticos**																Critical
 
-Casos NO críticos														NotCritical
+**Casos NO críticos**														 NotCritical
 
-Ruta crítica																	CriticalRoute
+**Ruta crítica**																	 CriticalRoute
 
-Sprint (X es el número del Sprint)							  SprintX
+**Sprint (X es el número del Sprint)**							SprintX
 
-Caso incompleto														 Imcompleto
+**Caso incompleto**														  Incompleto
 
-Textos Apa																   ApaText
+**Textos Apa**																	 ApaText
 
-Casos negativos														 Negative
+**Casos negativos**														  Negative
 
-Happy Path																   HappyPath
+**Happy Path**																	HappyPath
