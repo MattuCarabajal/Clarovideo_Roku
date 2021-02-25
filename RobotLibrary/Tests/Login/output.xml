@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210212 12:28:39.703" rpa="false">
-<suite id="s1" name="Login" source="C:\Users\rjrodriguez\Documents\Rokub0\Clarovideo_Roku\RobotLibrary\Tests\Login\login.robot">
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210225 14:24:44.797" rpa="false">
+<suite id="s1" name="Login" source="G:\GlobalHitss\Roku\Repo Automatización Roku - Robot y Python\Clarovideo_Roku\RobotLibrary\Tests\Login\login.robot">
 <test id="s1-t1" name="03_0001_LOGIN-Visualizar_objeto_titulo_Inicia_sesion">
 <kw name="Access Login" library="keywords" type="setup">
 <kw name="Open channel" library="keywords">
@@ -8,31 +8,31 @@
 <arguments>
 <arg>${channel_code}</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:40.654" endtime="20210212 12:28:41.436"></status>
+<status status="PASS" starttime="20210225 14:24:45.529" endtime="20210225 14:24:46.280"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20210212 12:28:44.438" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210212 12:28:41.437" endtime="20210212 12:28:44.438"></status>
+<msg timestamp="20210225 14:24:49.294" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:24:46.281" endtime="20210225 14:24:49.294"></status>
 </kw>
-<status status="PASS" starttime="20210212 12:28:40.654" endtime="20210212 12:28:44.438"></status>
+<status status="PASS" starttime="20210225 14:24:45.529" endtime="20210225 14:24:49.294"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:44.438" endtime="20210212 12:28:46.491"></status>
+<status status="PASS" starttime="20210225 14:24:49.294" endtime="20210225 14:24:51.403"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Select</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:46.491" endtime="20210212 12:28:48.557"></status>
+<status status="PASS" starttime="20210225 14:24:51.403" endtime="20210225 14:24:53.462"></status>
 </kw>
-<status status="PASS" starttime="20210212 12:28:40.654" endtime="20210212 12:28:48.557"></status>
+<status status="PASS" starttime="20210225 14:24:45.529" endtime="20210225 14:24:53.462"></status>
 </kw>
 <kw name="Element identifier" library="keywords">
 <arguments>
@@ -51,8 +51,8 @@
 <assign>
 <var>${using}</var>
 </assign>
-<msg timestamp="20210212 12:28:48.559" level="INFO">${using} = using</msg>
-<status status="PASS" starttime="20210212 12:28:48.558" endtime="20210212 12:28:48.559"></status>
+<msg timestamp="20210225 14:24:53.463" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:24:53.462" endtime="20210225 14:24:53.463"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -62,8 +62,8 @@
 <assign>
 <var>${attribute}</var>
 </assign>
-<msg timestamp="20210212 12:28:48.561" level="INFO">${attribute} = attribute</msg>
-<status status="PASS" starttime="20210212 12:28:48.559" endtime="20210212 12:28:48.561"></status>
+<msg timestamp="20210225 14:24:53.463" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:24:53.463" endtime="20210225 14:24:53.463"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -73,8 +73,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20210212 12:28:48.561" level="INFO">${value} = value</msg>
-<status status="PASS" starttime="20210212 12:28:48.561" endtime="20210212 12:28:48.562"></status>
+<msg timestamp="20210225 14:24:53.463" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:24:53.463" endtime="20210225 14:24:53.463"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -86,8 +86,8 @@
 <assign>
 <var>&amp;{usingDic}</var>
 </assign>
-<msg timestamp="20210212 12:28:48.563" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=title }</msg>
-<status status="PASS" starttime="20210212 12:28:48.562" endtime="20210212 12:28:48.563"></status>
+<msg timestamp="20210225 14:24:53.464" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=title }</msg>
+<status status="PASS" starttime="20210225 14:24:53.463" endtime="20210225 14:24:53.464"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -97,8 +97,8 @@
 <assign>
 <var>@{elementsDic}</var>
 </assign>
-<msg timestamp="20210212 12:28:48.563" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'title'} ]</msg>
-<status status="PASS" starttime="20210212 12:28:48.563" endtime="20210212 12:28:48.563"></status>
+<msg timestamp="20210225 14:24:53.464" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'title'} ]</msg>
+<status status="PASS" starttime="20210225 14:24:53.464" endtime="20210225 14:24:53.464"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -108,59 +108,73 @@
 <assign>
 <var>&amp;{ElementParams}</var>
 </assign>
-<msg timestamp="20210212 12:28:48.564" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
-<status status="PASS" starttime="20210212 12:28:48.564" endtime="20210212 12:28:48.564"></status>
+<msg timestamp="20210225 14:24:53.464" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
+<status status="PASS" starttime="20210225 14:24:53.464" endtime="20210225 14:24:53.464"></status>
 </kw>
-<msg timestamp="20210212 12:28:48.564" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
-<status status="PASS" starttime="20210212 12:28:48.558" endtime="20210212 12:28:48.564"></status>
+<msg timestamp="20210225 14:24:53.464" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
+<status status="PASS" starttime="20210225 14:24:53.462" endtime="20210225 14:24:53.464"></status>
 </kw>
 <kw name="Verify is screen loaded" library="RobotLibrary">
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210212 12:28:48.721" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
-<status status="PASS" starttime="20210212 12:28:48.565" endtime="20210212 12:28:48.721"></status>
+<msg timestamp="20210225 14:24:53.584" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
+<status status="PASS" starttime="20210225 14:24:53.465" endtime="20210225 14:24:53.584"></status>
 </kw>
-<status status="PASS" starttime="20210212 12:28:40.653" endtime="20210212 12:28:48.722" critical="yes"></status>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:24:53.585" endtime="20210225 14:24:53.585"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:24:53.585" endtime="20210225 14:24:53.585"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:24:45.528" endtime="20210225 14:24:53.585" critical="yes"></status>
 </test>
-<test id="s1-t2" name="Access the login">
+<test id="s1-t2" name="03_0044_LOGIN_Verificar_inicio_de_sesion_exitoso">
 <kw name="Access Login" library="keywords" type="setup">
 <kw name="Open channel" library="keywords">
 <kw name="Launch the channel" library="RobotLibrary">
 <arguments>
 <arg>${channel_code}</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:48.724" endtime="20210212 12:28:50.235"></status>
+<status status="PASS" starttime="20210225 14:24:53.587" endtime="20210225 14:24:55.102"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20210212 12:28:53.236" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210212 12:28:50.235" endtime="20210212 12:28:53.236"></status>
+<msg timestamp="20210225 14:24:58.115" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:24:55.102" endtime="20210225 14:24:58.115"></status>
 </kw>
-<status status="PASS" starttime="20210212 12:28:48.724" endtime="20210212 12:28:53.236"></status>
+<status status="PASS" starttime="20210225 14:24:53.587" endtime="20210225 14:24:58.115"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:53.236" endtime="20210212 12:28:55.351"></status>
+<status status="PASS" starttime="20210225 14:24:58.116" endtime="20210225 14:25:00.187"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Select</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:55.351" endtime="20210212 12:28:57.398"></status>
+<status status="PASS" starttime="20210225 14:25:00.187" endtime="20210225 14:25:02.241"></status>
 </kw>
-<status status="PASS" starttime="20210212 12:28:48.723" endtime="20210212 12:28:57.399"></status>
+<status status="PASS" starttime="20210225 14:24:53.586" endtime="20210225 14:25:02.241"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Select</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:57.399" endtime="20210212 12:28:59.464"></status>
+<status status="PASS" starttime="20210225 14:25:02.241" endtime="20210225 14:25:04.309"></status>
 </kw>
 <kw name="Enter username" library="keywords">
 <arguments>
@@ -173,8 +187,8 @@
 <assign>
 <var>${userArray}</var>
 </assign>
-<msg timestamp="20210212 12:28:59.466" level="INFO">${userArray} = ['qaroku_rebeca', 'gmail.com']</msg>
-<status status="PASS" starttime="20210212 12:28:59.465" endtime="20210212 12:28:59.466"></status>
+<msg timestamp="20210225 14:25:04.310" level="INFO">${userArray} = ['qaroku_rebeca', 'gmail.com']</msg>
+<status status="PASS" starttime="20210225 14:25:04.310" endtime="20210225 14:25:04.310"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -185,8 +199,8 @@
 <assign>
 <var>${user}</var>
 </assign>
-<msg timestamp="20210212 12:28:59.467" level="INFO">${user} = qaroku_rebeca</msg>
-<status status="PASS" starttime="20210212 12:28:59.466" endtime="20210212 12:28:59.467"></status>
+<msg timestamp="20210225 14:25:04.310" level="INFO">${user} = qaroku_rebeca</msg>
+<status status="PASS" starttime="20210225 14:25:04.310" endtime="20210225 14:25:04.310"></status>
 </kw>
 <kw name="Get From List" library="Collections">
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
@@ -197,75 +211,75 @@
 <assign>
 <var>${mail}</var>
 </assign>
-<msg timestamp="20210212 12:28:59.467" level="INFO">${mail} = gmail.com</msg>
-<status status="PASS" starttime="20210212 12:28:59.467" endtime="20210212 12:28:59.467"></status>
+<msg timestamp="20210225 14:25:04.311" level="INFO">${mail} = gmail.com</msg>
+<status status="PASS" starttime="20210225 14:25:04.310" endtime="20210225 14:25:04.311"></status>
 </kw>
 <kw name="Send word" library="RobotLibrary">
 <arguments>
 <arg>${user}</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:28:59.467" endtime="20210212 12:29:08.545"></status>
+<status status="PASS" starttime="20210225 14:25:04.311" endtime="20210225 14:25:13.571"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Lit_%40</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:08.545" endtime="20210212 12:29:10.594"></status>
+<status status="PASS" starttime="20210225 14:25:13.572" endtime="20210225 14:25:15.631"></status>
 </kw>
 <kw name="Send word" library="RobotLibrary">
 <arguments>
 <arg>${mail}</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:10.596" endtime="20210212 12:29:17.558"></status>
+<status status="PASS" starttime="20210225 14:25:15.632" endtime="20210225 14:25:22.654"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:17.558" endtime="20210212 12:29:18.609"></status>
+<status status="PASS" starttime="20210225 14:25:22.654" endtime="20210225 14:25:23.708"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:18.610" endtime="20210212 12:29:19.847"></status>
+<status status="PASS" starttime="20210225 14:25:23.708" endtime="20210225 14:25:24.763"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:19.847" endtime="20210212 12:29:20.899"></status>
+<status status="PASS" starttime="20210225 14:25:24.764" endtime="20210225 14:25:25.817"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:20.900" endtime="20210212 12:29:21.988"></status>
+<status status="PASS" starttime="20210225 14:25:25.817" endtime="20210225 14:25:26.872"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Select</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:21.988" endtime="20210212 12:29:23.122"></status>
+<status status="PASS" starttime="20210225 14:25:26.872" endtime="20210225 14:25:27.926"></status>
 </kw>
-<status status="PASS" starttime="20210212 12:28:59.464" endtime="20210212 12:29:23.122"></status>
+<status status="PASS" starttime="20210225 14:25:04.309" endtime="20210225 14:25:27.926"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:23.123" endtime="20210212 12:29:25.199"></status>
+<status status="PASS" starttime="20210225 14:25:27.926" endtime="20210225 14:25:29.985"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Select</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:25.200" endtime="20210212 12:29:27.254"></status>
+<status status="PASS" starttime="20210225 14:25:29.985" endtime="20210225 14:25:32.037"></status>
 </kw>
 <kw name="Enter password" library="keywords">
 <arguments>
@@ -275,118 +289,2438 @@
 <arguments>
 <arg>${passWord}</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:27.256" endtime="20210212 12:29:33.639"></status>
+<status status="PASS" starttime="20210225 14:25:32.038" endtime="20210225 14:25:38.561"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:33.639" endtime="20210212 12:29:34.684"></status>
+<status status="PASS" starttime="20210225 14:25:38.561" endtime="20210225 14:25:39.617"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:34.684" endtime="20210212 12:29:35.767"></status>
+<status status="PASS" starttime="20210225 14:25:39.617" endtime="20210225 14:25:40.676"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:35.767" endtime="20210212 12:29:36.818"></status>
+<status status="PASS" starttime="20210225 14:25:40.676" endtime="20210225 14:25:41.737"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:36.818" endtime="20210212 12:29:37.874"></status>
+<status status="PASS" starttime="20210225 14:25:41.738" endtime="20210225 14:25:42.790"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Select</arg>
 <arg>1</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:37.874" endtime="20210212 12:29:38.921"></status>
+<status status="PASS" starttime="20210225 14:25:42.790" endtime="20210225 14:25:43.847"></status>
 </kw>
-<status status="PASS" starttime="20210212 12:29:27.255" endtime="20210212 12:29:38.922"></status>
+<status status="PASS" starttime="20210225 14:25:32.038" endtime="20210225 14:25:43.847"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Down</arg>
 </arguments>
-<status status="PASS" starttime="20210212 12:29:38.923" endtime="20210212 12:29:40.971"></status>
+<status status="PASS" starttime="20210225 14:25:43.847" endtime="20210225 14:25:45.910"></status>
 </kw>
 <kw name="Send key" library="RobotLibrary">
 <arguments>
 <arg>Select</arg>
 </arguments>
-<status status="FAIL" starttime="20210212 12:29:40.971" endtime="20210212 12:29:41.508"></status>
+<status status="PASS" starttime="20210225 14:25:45.910" endtime="20210225 14:25:47.969"></status>
 </kw>
-<status status="FAIL" starttime="20210212 12:28:48.723" endtime="20210212 12:29:41.509" critical="yes">Execution terminated by signal</status>
-</test>
-<test id="s1-t3" name="Login with an invalid user">
+<kw name="Element identifier by text" library="keywords">
+<arguments>
+<arg>text</arg>
+<arg>Opciones</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:25:47.970" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:25:47.969" endtime="20210225 14:25:47.970"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:25:47.970" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:25:47.970" endtime="20210225 14:25:47.970"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:25:47.970" level="INFO">&amp;{usingDic} = { using=text | value=Opciones }</msg>
+<status status="PASS" starttime="20210225 14:25:47.970" endtime="20210225 14:25:47.970"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:25:47.971" level="INFO">@{elementsDic} = [ {'using': 'text', 'value': 'Opciones'} ]</msg>
+<status status="PASS" starttime="20210225 14:25:47.971" endtime="20210225 14:25:47.971"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:25:47.971" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'text', 'value': 'Opciones'}] }</msg>
+<status status="PASS" starttime="20210225 14:25:47.971" endtime="20210225 14:25:47.971"></status>
+</kw>
+<msg timestamp="20210225 14:25:47.971" level="INFO">${element} = {'elementData': [{'using': 'text', 'value': 'Opciones'}]}</msg>
+<status status="PASS" starttime="20210225 14:25:47.969" endtime="20210225 14:25:47.971"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:25:50.179" level="INFO">{'elementData': [{'using': 'text', 'value': 'Opciones'}]}</msg>
+<status status="PASS" starttime="20210225 14:25:47.971" endtime="20210225 14:25:50.179"></status>
+</kw>
+<kw name="Login teardown" type="teardown">
+<kw name="Run if fails" library="keywords">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:25:50.180" endtime="20210225 14:25:50.180"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:25:50.180" endtime="20210225 14:25:50.180"></status>
+</kw>
+<kw name="Logout" library="keywords">
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Info</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:25:50.181" endtime="20210225 14:25:52.242"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:25:52.242" endtime="20210225 14:25:54.330"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:25:54.330" endtime="20210225 14:25:56.387"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:25:50.180" endtime="20210225 14:25:56.387"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:25:50.180" endtime="20210225 14:25:56.387"></status>
+</kw>
 <tags>
-<tag>robot:exit</tag>
+<tag>CriticalRoute</tag>
 </tags>
-<status status="FAIL" starttime="20210212 12:29:41.512" endtime="20210212 12:29:41.513" critical="yes">Test execution stopped due to a fatal error.</status>
+<status status="PASS" starttime="20210225 14:24:53.586" endtime="20210225 14:25:56.387" critical="yes"></status>
 </test>
-<test id="s1-t4" name="Login with an invalid password">
+<test id="s1-t3" name="03_0041_LOGIN_Error_en_correo_electronico_no_registrado">
+<kw name="Access Login" library="keywords" type="setup">
+<kw name="Open channel" library="keywords">
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:25:56.389" endtime="20210225 14:25:58.036"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210225 14:26:01.040" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:25:58.036" endtime="20210225 14:26:01.040"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:25:56.388" endtime="20210225 14:26:01.040"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:01.041" endtime="20210225 14:26:03.150"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:03.150" endtime="20210225 14:26:05.211"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:25:56.388" endtime="20210225 14:26:05.211"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:05.212" endtime="20210225 14:26:07.279"></status>
+</kw>
+<kw name="Enter username" library="keywords">
+<arguments>
+<arg>${userNotRegistered}</arg>
+</arguments>
+<kw name="Convert mail" library="RobotLibrary">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<assign>
+<var>${userArray}</var>
+</assign>
+<msg timestamp="20210225 14:26:07.280" level="INFO">${userArray} = ['mailinexistente', 'gmail.com']</msg>
+<status status="PASS" starttime="20210225 14:26:07.280" endtime="20210225 14:26:07.280"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20210225 14:26:07.280" level="INFO">${user} = mailinexistente</msg>
+<status status="PASS" starttime="20210225 14:26:07.280" endtime="20210225 14:26:07.280"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${mail}</var>
+</assign>
+<msg timestamp="20210225 14:26:07.281" level="INFO">${mail} = gmail.com</msg>
+<status status="PASS" starttime="20210225 14:26:07.280" endtime="20210225 14:26:07.281"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:07.281" endtime="20210225 14:26:17.679"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Lit_%40</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:17.679" endtime="20210225 14:26:19.735"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${mail}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:19.735" endtime="20210225 14:26:26.770"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:26.771" endtime="20210225 14:26:27.829"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:27.829" endtime="20210225 14:26:28.884"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:28.884" endtime="20210225 14:26:29.950"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:29.950" endtime="20210225 14:26:31.004"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:31.004" endtime="20210225 14:26:32.064"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:26:07.280" endtime="20210225 14:26:32.064"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:32.065" endtime="20210225 14:26:34.121"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:34.121" endtime="20210225 14:26:36.177"></status>
+</kw>
+<kw name="Enter password" library="keywords">
+<arguments>
+<arg>${pass}</arg>
+</arguments>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${passWord}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:36.177" endtime="20210225 14:26:42.752"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:42.752" endtime="20210225 14:26:43.816"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:43.816" endtime="20210225 14:26:44.883"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:44.883" endtime="20210225 14:26:45.936"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:45.936" endtime="20210225 14:26:46.992"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:46.992" endtime="20210225 14:26:48.044"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:26:36.177" endtime="20210225 14:26:48.044"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:48.045" endtime="20210225 14:26:50.104"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:50.104" endtime="20210225 14:26:52.162"></status>
+</kw>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>error</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:26:52.163" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:26:52.163" endtime="20210225 14:26:52.163"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210225 14:26:52.163" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:26:52.163" endtime="20210225 14:26:52.164"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:26:52.164" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:26:52.164" endtime="20210225 14:26:52.164"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:26:52.164" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=error }</msg>
+<status status="PASS" starttime="20210225 14:26:52.164" endtime="20210225 14:26:52.164"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:26:52.165" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'error'} ]</msg>
+<status status="PASS" starttime="20210225 14:26:52.164" endtime="20210225 14:26:52.165"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:26:52.165" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'error'}] }</msg>
+<status status="PASS" starttime="20210225 14:26:52.165" endtime="20210225 14:26:52.165"></status>
+</kw>
+<msg timestamp="20210225 14:26:52.165" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:26:52.163" endtime="20210225 14:26:52.165"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:26:53.287" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:26:52.166" endtime="20210225 14:26:53.287"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:53.288" endtime="20210225 14:26:53.288"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:26:53.287" endtime="20210225 14:26:53.288"></status>
+</kw>
 <tags>
-<tag>robot:exit</tag>
+<tag>Imcompleto</tag>
+<tag>Negative</tag>
 </tags>
-<status status="FAIL" starttime="20210212 12:29:41.514" endtime="20210212 12:29:41.515" critical="yes">Test execution stopped due to a fatal error.</status>
+<status status="PASS" starttime="20210225 14:25:56.388" endtime="20210225 14:26:53.288" critical="yes"></status>
+</test>
+<test id="s1-t4" name="03_0042_LOGIN_Error_en_formato_en_ingreso_de_contrasenia">
+<kw name="Access Login" library="keywords" type="setup">
+<kw name="Open channel" library="keywords">
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:53.290" endtime="20210225 14:26:54.808"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210225 14:26:57.812" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:26:54.808" endtime="20210225 14:26:57.812"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:26:53.289" endtime="20210225 14:26:57.812"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:57.813" endtime="20210225 14:26:59.870"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:26:59.870" endtime="20210225 14:27:01.941"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:26:53.289" endtime="20210225 14:27:01.941"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:01.941" endtime="20210225 14:27:04.036"></status>
+</kw>
+<kw name="Enter username" library="keywords">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<kw name="Convert mail" library="RobotLibrary">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<assign>
+<var>${userArray}</var>
+</assign>
+<msg timestamp="20210225 14:27:04.037" level="INFO">${userArray} = ['qaroku_rebeca', 'gmail.com']</msg>
+<status status="PASS" starttime="20210225 14:27:04.037" endtime="20210225 14:27:04.037"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20210225 14:27:04.037" level="INFO">${user} = qaroku_rebeca</msg>
+<status status="PASS" starttime="20210225 14:27:04.037" endtime="20210225 14:27:04.037"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${mail}</var>
+</assign>
+<msg timestamp="20210225 14:27:04.038" level="INFO">${mail} = gmail.com</msg>
+<status status="PASS" starttime="20210225 14:27:04.037" endtime="20210225 14:27:04.038"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:04.038" endtime="20210225 14:27:13.395"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Lit_%40</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:13.395" endtime="20210225 14:27:15.524"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${mail}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:15.524" endtime="20210225 14:27:22.700"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:22.700" endtime="20210225 14:27:23.756"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:23.756" endtime="20210225 14:27:24.810"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:24.810" endtime="20210225 14:27:25.895"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:25.895" endtime="20210225 14:27:26.950"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:26.950" endtime="20210225 14:27:28.017"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:27:04.037" endtime="20210225 14:27:28.017"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:28.017" endtime="20210225 14:27:30.074"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:30.074" endtime="20210225 14:27:32.124"></status>
+</kw>
+<kw name="Enter password" library="keywords">
+<arguments>
+<arg>${passNotValid}</arg>
+</arguments>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${passWord}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:32.125" endtime="20210225 14:27:35.799"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:35.799" endtime="20210225 14:27:36.854"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:36.854" endtime="20210225 14:27:37.912"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:37.912" endtime="20210225 14:27:39.009"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:39.009" endtime="20210225 14:27:40.094"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:40.094" endtime="20210225 14:27:41.162"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:27:32.125" endtime="20210225 14:27:41.162"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:41.162" endtime="20210225 14:27:43.227"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:43.227" endtime="20210225 14:27:45.286"></status>
+</kw>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>error</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:27:45.287" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:27:45.287" endtime="20210225 14:27:45.287"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210225 14:27:45.287" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:27:45.287" endtime="20210225 14:27:45.287"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:27:45.287" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:27:45.287" endtime="20210225 14:27:45.287"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:27:45.288" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=error }</msg>
+<status status="PASS" starttime="20210225 14:27:45.287" endtime="20210225 14:27:45.288"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:27:45.288" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'error'} ]</msg>
+<status status="PASS" starttime="20210225 14:27:45.288" endtime="20210225 14:27:45.288"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:27:45.288" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'error'}] }</msg>
+<status status="PASS" starttime="20210225 14:27:45.288" endtime="20210225 14:27:45.288"></status>
+</kw>
+<msg timestamp="20210225 14:27:45.288" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:27:45.286" endtime="20210225 14:27:45.288"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:27:46.430" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:27:45.289" endtime="20210225 14:27:46.430"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:46.431" endtime="20210225 14:27:46.431"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:27:46.430" endtime="20210225 14:27:46.431"></status>
+</kw>
+<tags>
+<tag>Imcompleto</tag>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20210225 14:26:53.289" endtime="20210225 14:27:46.431" critical="yes"></status>
 </test>
 <test id="s1-t5" name="Login with an invalid user and password">
+<kw name="Access Login" library="keywords" type="setup">
+<kw name="Open channel" library="keywords">
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:46.432" endtime="20210225 14:27:47.947"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210225 14:27:50.951" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:27:47.947" endtime="20210225 14:27:50.951"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:27:46.432" endtime="20210225 14:27:50.951"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:50.952" endtime="20210225 14:27:53.064"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:53.064" endtime="20210225 14:27:55.130"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:27:46.432" endtime="20210225 14:27:55.130"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:55.130" endtime="20210225 14:27:57.220"></status>
+</kw>
+<kw name="Enter username" library="keywords">
+<arguments>
+<arg>${userNotValid}</arg>
+</arguments>
+<kw name="Convert mail" library="RobotLibrary">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<assign>
+<var>${userArray}</var>
+</assign>
+<msg timestamp="20210225 14:27:57.221" level="INFO">${userArray} = ['mailinvalido', 'gmail']</msg>
+<status status="PASS" starttime="20210225 14:27:57.221" endtime="20210225 14:27:57.221"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20210225 14:27:57.221" level="INFO">${user} = mailinvalido</msg>
+<status status="PASS" starttime="20210225 14:27:57.221" endtime="20210225 14:27:57.221"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${mail}</var>
+</assign>
+<msg timestamp="20210225 14:27:57.222" level="INFO">${mail} = gmail</msg>
+<status status="PASS" starttime="20210225 14:27:57.221" endtime="20210225 14:27:57.222"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:27:57.222" endtime="20210225 14:28:05.975"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Lit_%40</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:05.975" endtime="20210225 14:28:08.022"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${mail}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:08.022" endtime="20210225 14:28:12.826"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:12.826" endtime="20210225 14:28:13.886"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:13.886" endtime="20210225 14:28:14.940"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:14.940" endtime="20210225 14:28:15.994"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:15.994" endtime="20210225 14:28:17.062"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:17.062" endtime="20210225 14:28:18.116"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:27:57.220" endtime="20210225 14:28:18.117"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:18.117" endtime="20210225 14:28:20.190"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:20.191" endtime="20210225 14:28:22.251"></status>
+</kw>
+<kw name="Enter password" library="keywords">
+<arguments>
+<arg>${passNotValid}</arg>
+</arguments>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${passWord}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:22.252" endtime="20210225 14:28:25.942"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:25.942" endtime="20210225 14:28:27.004"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:27.004" endtime="20210225 14:28:28.051"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:28.051" endtime="20210225 14:28:29.106"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:29.107" endtime="20210225 14:28:30.175"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:30.175" endtime="20210225 14:28:31.227"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:28:22.251" endtime="20210225 14:28:31.227"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:31.228" endtime="20210225 14:28:33.281"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:33.281" endtime="20210225 14:28:35.339"></status>
+</kw>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>error</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:28:35.340" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:28:35.340" endtime="20210225 14:28:35.340"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210225 14:28:35.340" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:28:35.340" endtime="20210225 14:28:35.340"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:28:35.340" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:28:35.340" endtime="20210225 14:28:35.340"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:28:35.341" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=error }</msg>
+<status status="PASS" starttime="20210225 14:28:35.340" endtime="20210225 14:28:35.341"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:28:35.341" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'error'} ]</msg>
+<status status="PASS" starttime="20210225 14:28:35.341" endtime="20210225 14:28:35.341"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:28:35.342" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'error'}] }</msg>
+<status status="PASS" starttime="20210225 14:28:35.341" endtime="20210225 14:28:35.342"></status>
+</kw>
+<msg timestamp="20210225 14:28:35.342" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:28:35.339" endtime="20210225 14:28:35.342"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:28:45.915" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<msg timestamp="20210225 14:28:45.915" level="FAIL">Can't find element</msg>
+<status status="FAIL" starttime="20210225 14:28:35.342" endtime="20210225 14:28:45.915"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<kw name="Screenshot" library="RobotLibrary">
+<doc>Parametros
+path: directorio desde donde se ejecuta el .robot
+name: nombre del caso ejecutado
+roku_user: usuario dev de roku
+roku_pass: contraseña dev de roku</doc>
+<arguments>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:28:45.917" endtime="20210225 14:29:04.257"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:28:45.916" endtime="20210225 14:29:04.257"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:28:45.916" endtime="20210225 14:29:04.257"></status>
+</kw>
 <tags>
-<tag>robot:exit</tag>
+<tag>Imcompleto</tag>
+<tag>Negative</tag>
 </tags>
-<status status="FAIL" starttime="20210212 12:29:41.516" endtime="20210212 12:29:41.516" critical="yes">Test execution stopped due to a fatal error.</status>
+<status status="FAIL" starttime="20210225 14:27:46.432" endtime="20210225 14:29:04.257" critical="yes">Can't find element</status>
 </test>
 <test id="s1-t6" name="Login with empty password">
+<kw name="Access Login" library="keywords" type="setup">
+<kw name="Open channel" library="keywords">
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:04.259" endtime="20210225 14:29:05.804"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210225 14:29:08.804" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:29:05.804" endtime="20210225 14:29:08.804"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:29:04.259" endtime="20210225 14:29:08.804"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:08.805" endtime="20210225 14:29:10.880"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:10.880" endtime="20210225 14:29:12.933"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:29:04.259" endtime="20210225 14:29:12.933"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:12.933" endtime="20210225 14:29:14.993"></status>
+</kw>
+<kw name="Enter username" library="keywords">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<kw name="Convert mail" library="RobotLibrary">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<assign>
+<var>${userArray}</var>
+</assign>
+<msg timestamp="20210225 14:29:14.994" level="INFO">${userArray} = ['qaroku_rebeca', 'gmail.com']</msg>
+<status status="PASS" starttime="20210225 14:29:14.994" endtime="20210225 14:29:14.994"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20210225 14:29:14.994" level="INFO">${user} = qaroku_rebeca</msg>
+<status status="PASS" starttime="20210225 14:29:14.994" endtime="20210225 14:29:14.994"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${mail}</var>
+</assign>
+<msg timestamp="20210225 14:29:14.995" level="INFO">${mail} = gmail.com</msg>
+<status status="PASS" starttime="20210225 14:29:14.995" endtime="20210225 14:29:14.995"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:14.995" endtime="20210225 14:29:24.381"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Lit_%40</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:24.381" endtime="20210225 14:29:26.442"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${mail}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:26.442" endtime="20210225 14:29:33.528"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:33.528" endtime="20210225 14:29:34.590"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:34.590" endtime="20210225 14:29:35.650"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:35.650" endtime="20210225 14:29:36.726"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:36.726" endtime="20210225 14:29:37.822"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:37.822" endtime="20210225 14:29:38.887"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:29:14.993" endtime="20210225 14:29:38.887"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:38.888" endtime="20210225 14:29:40.951"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:40.951" endtime="20210225 14:29:43.016"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:43.017" endtime="20210225 14:29:45.071"></status>
+</kw>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>error</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:29:45.071" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:29:45.071" endtime="20210225 14:29:45.071"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210225 14:29:45.072" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:29:45.071" endtime="20210225 14:29:45.072"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:29:45.072" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:29:45.072" endtime="20210225 14:29:45.072"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:29:45.073" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=error }</msg>
+<status status="PASS" starttime="20210225 14:29:45.072" endtime="20210225 14:29:45.073"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:29:45.073" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'error'} ]</msg>
+<status status="PASS" starttime="20210225 14:29:45.073" endtime="20210225 14:29:45.073"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:29:45.073" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'error'}] }</msg>
+<status status="PASS" starttime="20210225 14:29:45.073" endtime="20210225 14:29:45.073"></status>
+</kw>
+<msg timestamp="20210225 14:29:45.074" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:29:45.071" endtime="20210225 14:29:45.074"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:29:46.214" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:29:45.074" endtime="20210225 14:29:46.214"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:46.215" endtime="20210225 14:29:46.215"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:29:46.215" endtime="20210225 14:29:46.215"></status>
+</kw>
 <tags>
-<tag>robot:exit</tag>
+<tag>Imcompleto</tag>
+<tag>Negative</tag>
 </tags>
-<status status="FAIL" starttime="20210212 12:29:41.517" endtime="20210212 12:29:41.517" critical="yes">Test execution stopped due to a fatal error.</status>
+<status status="PASS" starttime="20210225 14:29:04.258" endtime="20210225 14:29:46.216" critical="yes"></status>
 </test>
 <test id="s1-t7" name="Login with empty user">
+<kw name="Access Login" library="keywords" type="setup">
+<kw name="Open channel" library="keywords">
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:46.217" endtime="20210225 14:29:47.766"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210225 14:29:50.777" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:29:47.766" endtime="20210225 14:29:50.777"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:29:46.217" endtime="20210225 14:29:50.777"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:50.777" endtime="20210225 14:29:52.851"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:52.852" endtime="20210225 14:29:54.909"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:29:46.217" endtime="20210225 14:29:54.909"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:54.909" endtime="20210225 14:29:56.988"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:56.989" endtime="20210225 14:29:59.057"></status>
+</kw>
+<kw name="Enter password" library="keywords">
+<arguments>
+<arg>${pass}</arg>
+</arguments>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${passWord}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:29:59.058" endtime="20210225 14:30:05.575"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:05.575" endtime="20210225 14:30:06.648"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:06.648" endtime="20210225 14:30:07.697"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:07.698" endtime="20210225 14:30:08.749"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:08.750" endtime="20210225 14:30:09.811"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:09.812" endtime="20210225 14:30:10.879"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:29:59.058" endtime="20210225 14:30:10.879"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:10.879" endtime="20210225 14:30:12.946"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:12.947" endtime="20210225 14:30:15.031"></status>
+</kw>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>error</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:30:15.031" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:30:15.031" endtime="20210225 14:30:15.031"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210225 14:30:15.032" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:30:15.031" endtime="20210225 14:30:15.032"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:30:15.032" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:30:15.032" endtime="20210225 14:30:15.032"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:30:15.032" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=error }</msg>
+<status status="PASS" starttime="20210225 14:30:15.032" endtime="20210225 14:30:15.032"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:30:15.033" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'error'} ]</msg>
+<status status="PASS" starttime="20210225 14:30:15.032" endtime="20210225 14:30:15.033"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:30:15.033" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'error'}] }</msg>
+<status status="PASS" starttime="20210225 14:30:15.033" endtime="20210225 14:30:15.033"></status>
+</kw>
+<msg timestamp="20210225 14:30:15.033" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:30:15.031" endtime="20210225 14:30:15.033"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:30:18.294" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:30:15.033" endtime="20210225 14:30:18.294"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:18.295" endtime="20210225 14:30:18.295"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:30:18.294" endtime="20210225 14:30:18.295"></status>
+</kw>
 <tags>
-<tag>robot:exit</tag>
+<tag>Imcompleto</tag>
+<tag>Negative</tag>
 </tags>
-<status status="FAIL" starttime="20210212 12:29:41.519" endtime="20210212 12:29:41.519" critical="yes">Test execution stopped due to a fatal error.</status>
+<status status="PASS" starttime="20210225 14:29:46.217" endtime="20210225 14:30:18.295" critical="yes"></status>
 </test>
 <test id="s1-t8" name="Login with empty user and password">
+<kw name="Access Login" library="keywords" type="setup">
+<kw name="Open channel" library="keywords">
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:18.297" endtime="20210225 14:30:19.815"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210225 14:30:22.828" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:30:19.815" endtime="20210225 14:30:22.828"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:30:18.297" endtime="20210225 14:30:22.828"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:22.829" endtime="20210225 14:30:24.934"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:24.934" endtime="20210225 14:30:27.032"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:30:18.297" endtime="20210225 14:30:27.032"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:27.033" endtime="20210225 14:30:29.099"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:29.099" endtime="20210225 14:30:31.163"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:31.164" endtime="20210225 14:30:33.226"></status>
+</kw>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>error</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:30:33.227" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:30:33.227" endtime="20210225 14:30:33.227"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210225 14:30:33.227" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:30:33.227" endtime="20210225 14:30:33.227"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:30:33.228" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:30:33.227" endtime="20210225 14:30:33.228"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:30:33.228" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=error }</msg>
+<status status="PASS" starttime="20210225 14:30:33.228" endtime="20210225 14:30:33.228"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:30:33.228" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'error'} ]</msg>
+<status status="PASS" starttime="20210225 14:30:33.228" endtime="20210225 14:30:33.228"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:30:33.229" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'error'}] }</msg>
+<status status="PASS" starttime="20210225 14:30:33.228" endtime="20210225 14:30:33.229"></status>
+</kw>
+<msg timestamp="20210225 14:30:33.229" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:30:33.227" endtime="20210225 14:30:33.229"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:30:34.369" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'error'}]}</msg>
+<status status="PASS" starttime="20210225 14:30:33.229" endtime="20210225 14:30:34.369"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:34.370" endtime="20210225 14:30:34.370"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:30:34.370" endtime="20210225 14:30:34.370"></status>
+</kw>
 <tags>
-<tag>robot:exit</tag>
+<tag>Imcompleto</tag>
+<tag>Negative</tag>
 </tags>
-<status status="FAIL" starttime="20210212 12:29:41.520" endtime="20210212 12:29:41.521" critical="yes">Test execution stopped due to a fatal error.</status>
+<status status="PASS" starttime="20210225 14:30:18.296" endtime="20210225 14:30:34.370" critical="yes"></status>
 </test>
-<test id="s1-t9" name="Reopen with active sesion">
+<test id="s1-t9" name="03_0047_LOGIN_Reabrir_canal_con_sesion_activa">
+<kw name="Access Login" library="keywords" type="setup">
+<kw name="Open channel" library="keywords">
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:34.372" endtime="20210225 14:30:35.889"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210225 14:30:38.893" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210225 14:30:35.889" endtime="20210225 14:30:38.893"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:30:34.372" endtime="20210225 14:30:38.893"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:38.894" endtime="20210225 14:30:41.011"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:41.011" endtime="20210225 14:30:43.066"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:30:34.371" endtime="20210225 14:30:43.067"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:43.067" endtime="20210225 14:30:45.148"></status>
+</kw>
+<kw name="Enter username" library="keywords">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<kw name="Convert mail" library="RobotLibrary">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<assign>
+<var>${userArray}</var>
+</assign>
+<msg timestamp="20210225 14:30:45.149" level="INFO">${userArray} = ['qaroku_rebeca', 'gmail.com']</msg>
+<status status="PASS" starttime="20210225 14:30:45.149" endtime="20210225 14:30:45.149"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20210225 14:30:45.150" level="INFO">${user} = qaroku_rebeca</msg>
+<status status="PASS" starttime="20210225 14:30:45.149" endtime="20210225 14:30:45.150"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${mail}</var>
+</assign>
+<msg timestamp="20210225 14:30:45.150" level="INFO">${mail} = gmail.com</msg>
+<status status="PASS" starttime="20210225 14:30:45.150" endtime="20210225 14:30:45.150"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:45.150" endtime="20210225 14:30:54.429"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Lit_%40</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:54.429" endtime="20210225 14:30:56.481"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${mail}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:30:56.481" endtime="20210225 14:31:03.579"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:03.579" endtime="20210225 14:31:04.659"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:04.659" endtime="20210225 14:31:05.716"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:05.716" endtime="20210225 14:31:06.783"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:06.784" endtime="20210225 14:31:07.857"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:07.857" endtime="20210225 14:31:08.935"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:30:45.149" endtime="20210225 14:31:08.935"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:08.936" endtime="20210225 14:31:11.052"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:11.052" endtime="20210225 14:31:13.161"></status>
+</kw>
+<kw name="Enter password" library="keywords">
+<arguments>
+<arg>${pass}</arg>
+</arguments>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${passWord}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:13.162" endtime="20210225 14:31:19.956"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:19.956" endtime="20210225 14:31:21.015"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:21.015" endtime="20210225 14:31:22.071"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:22.072" endtime="20210225 14:31:23.127"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:23.128" endtime="20210225 14:31:24.194"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:24.194" endtime="20210225 14:31:25.304"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:31:13.162" endtime="20210225 14:31:25.304"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:25.304" endtime="20210225 14:31:27.350"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:27.350" endtime="20210225 14:31:29.466"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Home</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:29.467" endtime="20210225 14:31:31.525"></status>
+</kw>
+<kw name="Launch the channel" library="RobotLibrary">
+<arguments>
+<arg>${channel_code}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:31.525" endtime="20210225 14:31:33.024"></status>
+</kw>
+<kw name="Element identifier by text" library="keywords">
+<arguments>
+<arg>text</arg>
+<arg>Opciones</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:31:33.025" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:31:33.024" endtime="20210225 14:31:33.025"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:31:33.025" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:31:33.025" endtime="20210225 14:31:33.025"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:31:33.025" level="INFO">&amp;{usingDic} = { using=text | value=Opciones }</msg>
+<status status="PASS" starttime="20210225 14:31:33.025" endtime="20210225 14:31:33.025"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:31:33.026" level="INFO">@{elementsDic} = [ {'using': 'text', 'value': 'Opciones'} ]</msg>
+<status status="PASS" starttime="20210225 14:31:33.026" endtime="20210225 14:31:33.026"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:31:33.026" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'text', 'value': 'Opciones'}] }</msg>
+<status status="PASS" starttime="20210225 14:31:33.026" endtime="20210225 14:31:33.026"></status>
+</kw>
+<msg timestamp="20210225 14:31:33.026" level="INFO">${element} = {'elementData': [{'using': 'text', 'value': 'Opciones'}]}</msg>
+<status status="PASS" starttime="20210225 14:31:33.024" endtime="20210225 14:31:33.026"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:31:33.061" level="INFO">{'elementData': [{'using': 'text', 'value': 'Opciones'}]}</msg>
+<status status="PASS" starttime="20210225 14:31:33.026" endtime="20210225 14:31:33.061"></status>
+</kw>
+<kw name="Login teardown" type="teardown">
+<kw name="Run if fails" library="keywords">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:33.061" endtime="20210225 14:31:33.062"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:31:33.061" endtime="20210225 14:31:33.062"></status>
+</kw>
+<kw name="Logout" library="keywords">
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Info</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:33.062" endtime="20210225 14:31:35.129"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:35.129" endtime="20210225 14:31:37.194"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:37.195" endtime="20210225 14:31:39.242"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:31:33.062" endtime="20210225 14:31:39.242"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:31:33.061" endtime="20210225 14:31:39.243"></status>
+</kw>
 <tags>
-<tag>robot:exit</tag>
+<tag>Critical</tag>
 </tags>
-<status status="FAIL" starttime="20210212 12:29:41.522" endtime="20210212 12:29:41.523" critical="yes">Test execution stopped due to a fatal error.</status>
+<status status="PASS" starttime="20210225 14:30:34.371" endtime="20210225 14:31:39.243" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Logout">
+<kw name="Login" library="keywords" type="setup">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Seleeccionar input "Usuario"</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:39.244" endtime="20210225 14:31:39.244"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:39.244" endtime="20210225 14:31:40.304"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Ingresar usuario</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:40.305" endtime="20210225 14:31:40.305"></status>
+</kw>
+<kw name="Enter username" library="keywords">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<kw name="Convert mail" library="RobotLibrary">
+<arguments>
+<arg>${userMail}</arg>
+</arguments>
+<assign>
+<var>${userArray}</var>
+</assign>
+<msg timestamp="20210225 14:31:40.305" level="INFO">${userArray} = ['qaroku_rebeca', 'gmail.com']</msg>
+<status status="PASS" starttime="20210225 14:31:40.305" endtime="20210225 14:31:40.305"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20210225 14:31:40.306" level="INFO">${user} = qaroku_rebeca</msg>
+<status status="PASS" starttime="20210225 14:31:40.305" endtime="20210225 14:31:40.306"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${userArray}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${mail}</var>
+</assign>
+<msg timestamp="20210225 14:31:40.306" level="INFO">${mail} = gmail.com</msg>
+<status status="PASS" starttime="20210225 14:31:40.306" endtime="20210225 14:31:40.306"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:40.306" endtime="20210225 14:31:49.652"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Lit_%40</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:49.652" endtime="20210225 14:31:51.695"></status>
+</kw>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${mail}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:51.695" endtime="20210225 14:31:58.801"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:58.801" endtime="20210225 14:31:59.863"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:31:59.863" endtime="20210225 14:32:00.913"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:00.913" endtime="20210225 14:32:01.975"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:01.975" endtime="20210225 14:32:03.058"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:03.058" endtime="20210225 14:32:04.107"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:31:40.305" endtime="20210225 14:32:04.107"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Ubicar y seleccionar input "Password"</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:04.107" endtime="20210225 14:32:04.107"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:04.107" endtime="20210225 14:32:05.205"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:05.205" endtime="20210225 14:32:06.264"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Ingresar contraseña</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:06.264" endtime="20210225 14:32:06.264"></status>
+</kw>
+<kw name="Enter password" library="keywords">
+<arguments>
+<arg>${pass}</arg>
+</arguments>
+<kw name="Send word" library="RobotLibrary">
+<arguments>
+<arg>${passWord}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:06.265" endtime="20210225 14:32:12.849"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:12.849" endtime="20210225 14:32:13.914"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:13.914" endtime="20210225 14:32:14.961"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:14.961" endtime="20210225 14:32:16.020"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:16.020" endtime="20210225 14:32:17.087"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:17.087" endtime="20210225 14:32:18.147"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:32:06.264" endtime="20210225 14:32:18.147"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Ubicar y seleccionar botón "Inicia Sesion"</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:18.147" endtime="20210225 14:32:18.147"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Down</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:18.147" endtime="20210225 14:32:19.195"></status>
+</kw>
+<kw name="Send key" library="RobotLibrary">
+<arguments>
+<arg>Select</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:19.196" endtime="20210225 14:32:20.257"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Verificar si el elemento "Salir" del menú provisorio se visualiza en pantalla</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:20.257" endtime="20210225 14:32:20.257"></status>
+</kw>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>m5</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210225 14:32:20.258" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210225 14:32:20.258" endtime="20210225 14:32:20.258"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210225 14:32:20.258" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210225 14:32:20.258" endtime="20210225 14:32:20.258"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210225 14:32:20.258" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210225 14:32:20.258" endtime="20210225 14:32:20.258"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210225 14:32:20.259" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=m5 }</msg>
+<status status="PASS" starttime="20210225 14:32:20.258" endtime="20210225 14:32:20.259"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210225 14:32:20.259" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'm5'} ]</msg>
+<status status="PASS" starttime="20210225 14:32:20.259" endtime="20210225 14:32:20.259"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210225 14:32:20.259" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'm5'}] }</msg>
+<status status="PASS" starttime="20210225 14:32:20.259" endtime="20210225 14:32:20.259"></status>
+</kw>
+<msg timestamp="20210225 14:32:20.259" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'm5'}]}</msg>
+<status status="PASS" starttime="20210225 14:32:20.257" endtime="20210225 14:32:20.259"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210225 14:32:31.542" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'm5'}]}</msg>
+<msg timestamp="20210225 14:32:31.543" level="FAIL">Can't find element</msg>
+<status status="FAIL" starttime="20210225 14:32:20.260" endtime="20210225 14:32:31.543"></status>
+</kw>
+<status status="FAIL" starttime="20210225 14:31:39.244" endtime="20210225 14:32:31.543"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<kw name="Screenshot" library="RobotLibrary">
+<doc>Parametros
+path: directorio desde donde se ejecuta el .robot
+name: nombre del caso ejecutado
+roku_user: usuario dev de roku
+roku_pass: contraseña dev de roku</doc>
+<arguments>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210225 14:32:31.544" endtime="20210225 14:32:50.619"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:32:31.544" endtime="20210225 14:32:50.619"></status>
+</kw>
+<status status="PASS" starttime="20210225 14:32:31.543" endtime="20210225 14:32:50.620"></status>
+</kw>
+<tags>
+<tag>CriticalRoute</tag>
+</tags>
+<status status="FAIL" starttime="20210225 14:31:39.244" endtime="20210225 14:32:50.620" critical="yes">Setup failed:
+Can't find element</status>
 </test>
 <doc>Suite Login</doc>
-<status status="FAIL" starttime="20210212 12:28:39.707" endtime="20210212 12:29:41.524"></status>
+<status status="FAIL" starttime="20210225 14:24:44.798" endtime="20210225 14:32:50.622"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="8">Critical Tests</stat>
-<stat pass="1" fail="8">All Tests</stat>
+<stat pass="8" fail="2">Critical Tests</stat>
+<stat pass="8" fail="2">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="1" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
-<stat pass="0" fail="7">robot:exit</stat>
+<stat pass="1" fail="0">Critical</stat>
+<stat pass="1" fail="1">CriticalRoute</stat>
+<stat pass="5" fail="1">Imcompleto</stat>
+<stat pass="5" fail="1">Negative</stat>
 </tag>
 <suite>
-<stat pass="1" fail="8" id="s1" name="Login">Login</stat>
+<stat pass="8" fail="2" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210212 12:29:45.553" level="ERROR">Error in library 'RobotLibrary': Calling method 'close' of listener 'RobotLibrary' failed: ConnectionError: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /v1/session/c20c1b1f-ec96-5152-98b5-86c5586521d8 (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00000165822E8AF0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</msg>
 </errors>
 </robot>
