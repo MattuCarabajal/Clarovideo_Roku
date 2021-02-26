@@ -24,6 +24,13 @@ Login
     Send key  Down   1
     Send key  Select  1
 
+Launch channel and login
+    Side load  ${sideload}   ${roku_user}   ${roku_pass}
+    ${element}=   Element identifier    attr    name    btnLogin
+    Verify is screen loaded   ${element}
+    Access Login
+    Login
+
 Register
     #Seleccionar campo mail
     Send key   Select
@@ -41,6 +48,12 @@ Register
     #Seleccionar Siguiente
     Send Key   Down
     Send Key   Select
+
+Launch channel and register
+    Side load  ${sideload}   ${roku_user}   ${roku_pass}
+    ${element}=   Element identifier   attr   name   btnLogin
+    Verify is screen loaded   ${element}
+    Register
 
 Element identifier
     [Arguments]   ${usingValue}   ${attributeValue}   ${valueValue}
@@ -103,25 +116,34 @@ Assert Equal
     [Return]   ${result}
 
 Open channel
+    Launch the channel  ${channel_code}
+    Wait until text     text    Claro video te recomienda
+    #Sleep   7
+
+Open channel not logged
     Launch the channel   ${channel_code}
-    Sleep   3
+    Wait until      attr    name    title
 
 Access Registration
-    Open channel
+    Open channel not logged
     Send key   Select
 
 Access and Register
     Access Registration
     Register
+    Wait until text     text    Claro video te recomienda
+    #Sleep   7
 
 Access Login
-    Open channel
+    Open channel not logged
     Send Key   Down
     Send Key   Select
 
 Access and login
     Access Login
     Login
+    Wait until text     text    Claro video te recomienda
+    #Sleep   7
 
 Logout
     Send key    Info
@@ -129,9 +151,25 @@ Logout
     Send key    Select
 
 Logout teardown
+    Sleep               3
+    Wait until text     text    Opciones
     Run if fails
     Logout
 
 Reabrir Canal
     Send key        home
     Open channel
+
+Wait until
+    [Arguments]     ${usingValue}   ${attributeValue}   ${valueValue}
+    ${element}=     Element identifier      ${usingValue}   ${attributeValue}   ${valueValue}
+    Verify is screen loaded     ${element}      ${wait}
+
+Wait until text
+    [Arguments]   ${usingValue}   ${valueValue}
+    ${element}=     Element identifier by text      ${usingValue}   ${valueValue}
+    Verify is screen loaded     ${element}      ${wait}
+
+Reabrir y logout
+    Reabrir Canal
+    Logout

@@ -8,7 +8,7 @@ Resource        ./../Utilities/variables.robot
 *** Test Cases ***
 First test executed
     #Instalar aplicación
-    Side load       ${sideload}     ${channel_user}     ${channel_pass}
+    Side load       ${sideload}     ${roku_user}     ${roku_pass}
     #Verificar que se cargó un elemento de la landing
     ${element}=     Element identifier      attr    name    btnLogin
     Verify is screen loaded     ${element}

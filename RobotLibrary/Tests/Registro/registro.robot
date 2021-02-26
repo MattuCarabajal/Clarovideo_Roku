@@ -23,7 +23,7 @@ Test Teardown   Run if fails
     Assert Equal   ${text}  Regístrate
 
 02_0019_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_un_mail
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #No se ingresa un mail
     #Ubicar y seleccionar input "Password"
     Send key            Down
@@ -41,7 +41,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 02_0022_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_una_contrasenia
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Seleccionar input "Correo electrónico"
     Send key            Select
     #Ingresar Correo electrónico
@@ -59,7 +59,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 02_0021_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_tildar_terminos_y_condiciones
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Seleccionar input "Correo electrónico"
     Send key            Select
     #Ingresar Correo electrónico
@@ -79,7 +79,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 02_0024_REGISTRO_Verificar_el_error_al_intentar_registrarse_con_todos_los_campos_vacios
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #No se ingresa un mail
     #No se ingresa una contrasenia
     #No se aceptan los Términos y Condiciones
@@ -93,7 +93,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 02_0030_REGISTRO_Verificar_error_al_intentar_registrarse_con_campos_usuario_y_contrasenias_vacios
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #No se ingresa un mail
     #No se ingresa una contrasenia
     #Buscar y aceptar Terminos y condiciones

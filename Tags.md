@@ -17,7 +17,7 @@
 | **Casos NO críticos**                  | NotCritical   |
 | **Ruta crítica**                       | CriticalRoute |
 | **Sprint (X es el número del Sprint)** | SprintX       |
-| **Caso incompleto**                    | Incompleto    |
+| **Caso incompleto**                    | Incomplete    |
 | **Textos Apa**                         | ApaText       |
 | **Casos negativos**                    | Negative      |
 | **Camino feliz**                       | HappyPath     |

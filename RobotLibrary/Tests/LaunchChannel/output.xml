@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210225 13:20:55.101" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210226 16:21:33.071" rpa="false">
 <suite id="s1" name="Start Channel" source="G:\GlobalHitss\Roku\Repo Automatización Roku - Robot y Python\Clarovideo_Roku\RobotLibrary\Tests\LaunchChannel\start_channel.robot">
 <test id="s1-t1" name="Channel is launched">
 <kw name="Side load" library="RobotLibrary">
@@ -8,23 +8,123 @@
 <arg>${roku_user}</arg>
 <arg>${roku_pass}</arg>
 </arguments>
-<msg timestamp="20210225 13:20:55.991" level="FAIL">Post "http://192.168.0.200/plugin_install": http: ContentLength=305 with Body length 0</msg>
-<status status="FAIL" starttime="20210225 13:20:55.888" endtime="20210225 13:20:55.991"></status>
+<status status="PASS" starttime="20210226 16:21:33.786" endtime="20210226 16:21:37.420"></status>
 </kw>
-<status status="FAIL" starttime="20210225 13:20:55.888" endtime="20210225 13:20:55.991" critical="yes">Post "http://192.168.0.200/plugin_install": http: ContentLength=305 with Body length 0</status>
+<kw name="Element identifier" library="keywords">
+<arguments>
+<arg>attr</arg>
+<arg>name</arg>
+<arg>btnLogin</arg>
+</arguments>
+<assign>
+<var>${element}</var>
+</assign>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>using</arg>
+</arguments>
+<assign>
+<var>${using}</var>
+</assign>
+<msg timestamp="20210226 16:21:37.421" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210226 16:21:37.420" endtime="20210226 16:21:37.421"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>attribute</arg>
+</arguments>
+<assign>
+<var>${attribute}</var>
+</assign>
+<msg timestamp="20210226 16:21:37.421" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210226 16:21:37.421" endtime="20210226 16:21:37.421"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>value</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210226 16:21:37.421" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210226 16:21:37.421" endtime="20210226 16:21:37.421"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${using}=${usingValue}</arg>
+<arg>${attribute}=${attributeValue}</arg>
+<arg>${value}=${valueValue}</arg>
+</arguments>
+<assign>
+<var>&amp;{usingDic}</var>
+</assign>
+<msg timestamp="20210226 16:21:37.422" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=btnLogin }</msg>
+<status status="PASS" starttime="20210226 16:21:37.421" endtime="20210226 16:21:37.422"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${usingDic}</arg>
+</arguments>
+<assign>
+<var>@{elementsDic}</var>
+</assign>
+<msg timestamp="20210226 16:21:37.422" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'} ]</msg>
+<status status="PASS" starttime="20210226 16:21:37.422" endtime="20210226 16:21:37.422"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>elementData=${elementsDic}</arg>
+</arguments>
+<assign>
+<var>&amp;{ElementParams}</var>
+</assign>
+<msg timestamp="20210226 16:21:37.422" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}] }</msg>
+<status status="PASS" starttime="20210226 16:21:37.422" endtime="20210226 16:21:37.422"></status>
+</kw>
+<msg timestamp="20210226 16:21:37.422" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
+<status status="PASS" starttime="20210226 16:21:37.420" endtime="20210226 16:21:37.422"></status>
+</kw>
+<kw name="Verify is screen loaded" library="RobotLibrary">
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20210226 16:21:41.884" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
+<status status="PASS" starttime="20210226 16:21:37.423" endtime="20210226 16:21:41.884"></status>
+</kw>
+<kw name="Run if fails" library="keywords" type="teardown">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Screenshot</arg>
+<arg>${EXECDIR}</arg>
+<arg>${TEST NAME}</arg>
+<arg>${roku_user}</arg>
+<arg>${roku_pass}</arg>
+</arguments>
+<status status="PASS" starttime="20210226 16:21:41.885" endtime="20210226 16:21:41.885"></status>
+</kw>
+<status status="PASS" starttime="20210226 16:21:41.885" endtime="20210226 16:21:41.885"></status>
+</kw>
+<status status="PASS" starttime="20210226 16:21:33.785" endtime="20210226 16:21:41.885" critical="yes"></status>
 </test>
 <doc>Suite Launch channel</doc>
-<status status="FAIL" starttime="20210225 13:20:55.102" endtime="20210225 13:20:55.992"></status>
+<status status="PASS" starttime="20210226 16:21:33.073" endtime="20210226 16:21:41.887"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Start Channel">Start Channel</stat>
+<stat pass="1" fail="0" id="s1" name="Start Channel">Start Channel</stat>
 </suite>
 </statistics>
 <errors>

@@ -17,6 +17,21 @@ Test Teardown   Run if fails
     ${element}=     Element identifier      attr    name    title
     Verify is screen loaded     ${element}
 
+03_0002_LOGIN_Verificar_texto_Inicia_sesion
+    Wait until      attr    name    title
+    ${text}=        Get attr    attr    name    title    text
+    Assert Equal    ${text}     Inicia sesión
+
+03_0004_LOGIN_Visualizar_objeto_descripcion_Cual_es_tu_correo_electronico
+    #Verificar si el elemento descripción se visualiza en pantalla
+    ${element}=     Element identifier      attr    name    descrip
+    Verify is screen loaded     ${element}
+
+03_0005_LOGIN_Verificar_objeto_descripción_contiene_texto_Cual_es_tu_correo_electronico
+    Wait until      attr    name    descrip
+    ${text}=        Get attr    attr    name    descrip    text
+    Assert Equal    ${text}     ¿Cuál es tu correo electrónico?
+
 03_0044_LOGIN_Verificar_inicio_de_sesion_exitoso
     [Tags]      CriticalRoute
     #Seleeccionar input "Usuario"
@@ -37,7 +52,7 @@ Test Teardown   Run if fails
     [Teardown]  Logout teardown
 
 03_0041_LOGIN_Error_en_correo_electronico_no_registrado
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Seleeccionar input "Usuario"
     Send key    Select
     #Ingresar usuario no valido
@@ -55,7 +70,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 03_0042_LOGIN_Error_en_formato_en_ingreso_de_contrasenia
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Seleeccionar input "Usuario"
     Send key    Select
     #Ingresar usuario
@@ -73,7 +88,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 Login with an invalid user and password
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Seleeccionar input "Usuario"
     Send key    Select
     #Ingresar usuario no valido
@@ -91,7 +106,7 @@ Login with an invalid user and password
     Verify is screen loaded   ${element}
 
 Login with empty password
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Seleeccionar input "Usuario"
     Send key    Select
     #Ingresar usuario
@@ -105,7 +120,7 @@ Login with empty password
     Verify is screen loaded     ${element}
 
 Login with empty user
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Ubicar y seleccionar input "Password"
     Send key    Down
     Send key    Select
@@ -119,7 +134,7 @@ Login with empty user
     Verify is screen loaded     ${element}
 
 Login with empty user and password
-    [Tags]      Negative    Imcompleto
+    [Tags]      Negative    Incomplete
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key    Down
     Send key    Down
@@ -153,7 +168,7 @@ Login with empty user and password
 
 Logout
     [Tags]      CriticalRoute
-    [Setup]     Login
+    [Setup]     Access and login
     Send key    Info
     Send key    Select
     ${element}=     Element identifier  attr    name    btnLogin
