@@ -13,10 +13,8 @@ Test Teardown   Run if fails
 
 *** Test Cases ***
 01_0001_LANDING_Verificar_poster_fondo_de_pantalla
-    [Tags]  Incomplete
     #Verificar que se cargó la pantalla Landing
-    #Buscar id elemento fondo de pantalla
-    ${element}=     Element identifier  attr    name    btnLogin
+    ${element}=     Element identifier  attr    name    fondo
     Verify is screen loaded     ${element}
 
 #Landing's title is available

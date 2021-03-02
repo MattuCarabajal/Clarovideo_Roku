@@ -13,12 +13,12 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 ########################################################################
-ip_roku = '192.168.0.200'
+ip_roku = '192.168.100.2'
 
 def get_variables():
    variables = {
        'ip_address': ip_roku,
-       'server_path': 'G:/GlobalHitss/Roku/QA/rokub0-qa/src/main.exe',
+       'server_path': 'C:/Users/rjrodriguez/Documents/Rokub0/Clarovideo_Roku/src/main.exe',
        'timeout':  20000,
        'pressDelay': 2000
    }
