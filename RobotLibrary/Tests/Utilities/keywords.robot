@@ -148,6 +148,7 @@ Access and login
 Logout
     Send key    Info
     Send key    Select
+    Set press delay     2
     Send key    Select
 
 Logout teardown
@@ -173,3 +174,24 @@ Wait until text
 Reabrir y logout
     Reabrir Canal
     Logout
+
+Get element by parentData
+    [Arguments]   ${usingValue}   ${attributeValue}   ${valueValue}     ${usingParentValue}   ${attributeParentValue}   ${valueParentValue}
+    ${using}   Set Variable   using
+    ${attribute}   Set Variable   attribute
+    ${value}   Set Variable   value
+
+    &{usingDic}=   Create dictionary   ${using}=${usingValue}   ${attribute}=${attributeValue}   ${value}=${valueValue}
+    @{elementsDic}=   Create List   ${usingDic}
+
+    &{usingDic}=   Create dictionary   ${using}=${usingParentValue}   ${attribute}=${attributeParentValue}   ${value}=${valueParentValue}
+    @{elementsParentDic}=   Create List   ${usingDic}
+
+    &{DicNode}      Create dictionary       elementData=${elementsDic}   parentData=${elementsParentDic}
+    [Return]   &{DicNode}
+
+Get attr by ParentData
+    [Arguments]     ${DicNode}      ${returnValueOfAttrubyte}
+    &{element}=   Get element   ${DicNode}
+    ${attributeValue}=   Get attribute   ${element}   ${returnValueOfAttrubyte}
+    [Return]   ${attributeValue}
