@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210226 16:19:31.874" rpa="false">
-<suite id="s1" name="Landing" source="G:\GlobalHitss\Roku\Repo Automatización Roku - Robot y Python\Clarovideo_Roku\RobotLibrary\Tests\Landing\landing.robot">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210303 11:18:20.690" rpa="false">
+<suite id="s1" name="Landing" source="C:\Users\rjrodriguez\Documents\Rokub0\Clarovideo_Roku\RobotLibrary\Tests\Landing\landing.robot">
 <kw name="Launch channel" library="keywords" type="setup">
 <kw name="Side load" library="RobotLibrary">
 <arguments>
@@ -8,7 +8,7 @@
 <arg>${roku_user}</arg>
 <arg>${roku_pass}</arg>
 </arguments>
-<status status="PASS" starttime="20210226 16:19:32.586" endtime="20210226 16:19:39.273"></status>
+<status status="PASS" starttime="20210303 11:18:21.429" endtime="20210303 11:18:24.227"></status>
 </kw>
 <kw name="Element identifier" library="keywords">
 <arguments>
@@ -27,8 +27,8 @@
 <assign>
 <var>${using}</var>
 </assign>
-<msg timestamp="20210226 16:19:39.274" level="INFO">${using} = using</msg>
-<status status="PASS" starttime="20210226 16:19:39.273" endtime="20210226 16:19:39.274"></status>
+<msg timestamp="20210303 11:18:24.228" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210303 11:18:24.228" endtime="20210303 11:18:24.228"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -38,8 +38,8 @@
 <assign>
 <var>${attribute}</var>
 </assign>
-<msg timestamp="20210226 16:19:39.274" level="INFO">${attribute} = attribute</msg>
-<status status="PASS" starttime="20210226 16:19:39.274" endtime="20210226 16:19:39.274"></status>
+<msg timestamp="20210303 11:18:24.228" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210303 11:18:24.228" endtime="20210303 11:18:24.228"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -49,8 +49,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20210226 16:19:39.274" level="INFO">${value} = value</msg>
-<status status="PASS" starttime="20210226 16:19:39.274" endtime="20210226 16:19:39.274"></status>
+<msg timestamp="20210303 11:18:24.229" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210303 11:18:24.228" endtime="20210303 11:18:24.229"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -62,8 +62,8 @@
 <assign>
 <var>&amp;{usingDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:39.275" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=btnLogin }</msg>
-<status status="PASS" starttime="20210226 16:19:39.274" endtime="20210226 16:19:39.275"></status>
+<msg timestamp="20210303 11:18:24.229" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=btnLogin }</msg>
+<status status="PASS" starttime="20210303 11:18:24.229" endtime="20210303 11:18:24.230"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -73,8 +73,8 @@
 <assign>
 <var>@{elementsDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:39.275" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'} ]</msg>
-<status status="PASS" starttime="20210226 16:19:39.275" endtime="20210226 16:19:39.275"></status>
+<msg timestamp="20210303 11:18:24.230" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'} ]</msg>
+<status status="PASS" starttime="20210303 11:18:24.230" endtime="20210303 11:18:24.230"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -84,33 +84,27 @@
 <assign>
 <var>&amp;{ElementParams}</var>
 </assign>
-<msg timestamp="20210226 16:19:39.275" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}] }</msg>
-<status status="PASS" starttime="20210226 16:19:39.275" endtime="20210226 16:19:39.275"></status>
+<msg timestamp="20210303 11:18:24.230" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}] }</msg>
+<status status="PASS" starttime="20210303 11:18:24.230" endtime="20210303 11:18:24.230"></status>
 </kw>
-<msg timestamp="20210226 16:19:39.275" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
-<status status="PASS" starttime="20210226 16:19:39.273" endtime="20210226 16:19:39.275"></status>
+<msg timestamp="20210303 11:18:24.231" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
+<status status="PASS" starttime="20210303 11:18:24.227" endtime="20210303 11:18:24.231"></status>
 </kw>
 <kw name="Verify is screen loaded" library="RobotLibrary">
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210226 16:19:42.915" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
-<status status="PASS" starttime="20210226 16:19:39.275" endtime="20210226 16:19:42.915"></status>
+<msg timestamp="20210303 11:18:29.931" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
+<status status="PASS" starttime="20210303 11:18:24.231" endtime="20210303 11:18:29.931"></status>
 </kw>
-<status status="PASS" starttime="20210226 16:19:32.585" endtime="20210226 16:19:42.915"></status>
+<status status="PASS" starttime="20210303 11:18:21.429" endtime="20210303 11:18:29.931"></status>
 </kw>
 <test id="s1-t1" name="01_0001_LANDING_Verificar_poster_fondo_de_pantalla">
-<kw name="Launch the channel" library="RobotLibrary" type="setup">
-<arguments>
-<arg>${channel_code}</arg>
-</arguments>
-<status status="PASS" starttime="20210226 16:19:42.916" endtime="20210226 16:19:44.461"></status>
-</kw>
 <kw name="Element identifier" library="keywords">
 <arguments>
 <arg>attr</arg>
 <arg>name</arg>
-<arg>btnLogin</arg>
+<arg>fondo</arg>
 </arguments>
 <assign>
 <var>${element}</var>
@@ -123,8 +117,8 @@
 <assign>
 <var>${using}</var>
 </assign>
-<msg timestamp="20210226 16:19:44.462" level="INFO">${using} = using</msg>
-<status status="PASS" starttime="20210226 16:19:44.462" endtime="20210226 16:19:44.462"></status>
+<msg timestamp="20210303 11:18:29.932" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210303 11:18:29.932" endtime="20210303 11:18:29.932"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -134,8 +128,8 @@
 <assign>
 <var>${attribute}</var>
 </assign>
-<msg timestamp="20210226 16:19:44.462" level="INFO">${attribute} = attribute</msg>
-<status status="PASS" starttime="20210226 16:19:44.462" endtime="20210226 16:19:44.462"></status>
+<msg timestamp="20210303 11:18:29.932" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210303 11:18:29.932" endtime="20210303 11:18:29.932"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -145,8 +139,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20210226 16:19:44.463" level="INFO">${value} = value</msg>
-<status status="PASS" starttime="20210226 16:19:44.462" endtime="20210226 16:19:44.463"></status>
+<msg timestamp="20210303 11:18:29.933" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210303 11:18:29.932" endtime="20210303 11:18:29.933"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -158,8 +152,8 @@
 <assign>
 <var>&amp;{usingDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:44.463" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=btnLogin }</msg>
-<status status="PASS" starttime="20210226 16:19:44.463" endtime="20210226 16:19:44.463"></status>
+<msg timestamp="20210303 11:18:29.933" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=fondo }</msg>
+<status status="PASS" starttime="20210303 11:18:29.933" endtime="20210303 11:18:29.933"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -169,8 +163,8 @@
 <assign>
 <var>@{elementsDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:44.463" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'} ]</msg>
-<status status="PASS" starttime="20210226 16:19:44.463" endtime="20210226 16:19:44.463"></status>
+<msg timestamp="20210303 11:18:29.934" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'fondo'} ]</msg>
+<status status="PASS" starttime="20210303 11:18:29.933" endtime="20210303 11:18:29.934"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -180,18 +174,18 @@
 <assign>
 <var>&amp;{ElementParams}</var>
 </assign>
-<msg timestamp="20210226 16:19:44.464" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}] }</msg>
-<status status="PASS" starttime="20210226 16:19:44.463" endtime="20210226 16:19:44.464"></status>
+<msg timestamp="20210303 11:18:29.934" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'fondo'}] }</msg>
+<status status="PASS" starttime="20210303 11:18:29.934" endtime="20210303 11:18:29.934"></status>
 </kw>
-<msg timestamp="20210226 16:19:44.464" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
-<status status="PASS" starttime="20210226 16:19:44.462" endtime="20210226 16:19:44.464"></status>
+<msg timestamp="20210303 11:18:29.934" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'fondo'}]}</msg>
+<status status="PASS" starttime="20210303 11:18:29.931" endtime="20210303 11:18:29.934"></status>
 </kw>
 <kw name="Verify is screen loaded" library="RobotLibrary">
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20210226 16:19:48.110" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'btnLogin'}]}</msg>
-<status status="PASS" starttime="20210226 16:19:44.464" endtime="20210226 16:19:48.110"></status>
+<msg timestamp="20210303 11:18:29.968" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'fondo'}]}</msg>
+<status status="PASS" starttime="20210303 11:18:29.935" endtime="20210303 11:18:29.968"></status>
 </kw>
 <kw name="Run if fails" library="keywords" type="teardown">
 <kw name="Run Keyword If Test Failed" library="BuiltIn">
@@ -203,22 +197,13 @@
 <arg>${roku_user}</arg>
 <arg>${roku_pass}</arg>
 </arguments>
-<status status="PASS" starttime="20210226 16:19:48.111" endtime="20210226 16:19:48.111"></status>
+<status status="PASS" starttime="20210303 11:18:29.969" endtime="20210303 11:18:29.969"></status>
 </kw>
-<status status="PASS" starttime="20210226 16:19:48.110" endtime="20210226 16:19:48.111"></status>
+<status status="PASS" starttime="20210303 11:18:29.969" endtime="20210303 11:18:29.969"></status>
 </kw>
-<tags>
-<tag>Incomplete</tag>
-</tags>
-<status status="PASS" starttime="20210226 16:19:42.915" endtime="20210226 16:19:48.111" critical="yes"></status>
+<status status="PASS" starttime="20210303 11:18:29.931" endtime="20210303 11:18:29.970" critical="yes"></status>
 </test>
 <test id="s1-t2" name="01_0004_LANDING_Visualizar_texto_todo_lo_que_te_gusta_en_un_solo_lugar">
-<kw name="Launch the channel" library="RobotLibrary" type="setup">
-<arguments>
-<arg>${channel_code}</arg>
-</arguments>
-<status status="PASS" starttime="20210226 16:19:48.112" endtime="20210226 16:19:49.633"></status>
-</kw>
 <kw name="Wait until" library="keywords">
 <arguments>
 <arg>attr</arg>
@@ -242,8 +227,8 @@
 <assign>
 <var>${using}</var>
 </assign>
-<msg timestamp="20210226 16:19:49.634" level="INFO">${using} = using</msg>
-<status status="PASS" starttime="20210226 16:19:49.634" endtime="20210226 16:19:49.634"></status>
+<msg timestamp="20210303 11:18:29.972" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210303 11:18:29.972" endtime="20210303 11:18:29.972"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -253,8 +238,8 @@
 <assign>
 <var>${attribute}</var>
 </assign>
-<msg timestamp="20210226 16:19:49.635" level="INFO">${attribute} = attribute</msg>
-<status status="PASS" starttime="20210226 16:19:49.634" endtime="20210226 16:19:49.635"></status>
+<msg timestamp="20210303 11:18:29.973" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210303 11:18:29.973" endtime="20210303 11:18:29.973"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -264,8 +249,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20210226 16:19:49.635" level="INFO">${value} = value</msg>
-<status status="PASS" starttime="20210226 16:19:49.635" endtime="20210226 16:19:49.635"></status>
+<msg timestamp="20210303 11:18:29.973" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210303 11:18:29.973" endtime="20210303 11:18:29.973"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -277,8 +262,8 @@
 <assign>
 <var>&amp;{usingDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:49.635" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=title }</msg>
-<status status="PASS" starttime="20210226 16:19:49.635" endtime="20210226 16:19:49.635"></status>
+<msg timestamp="20210303 11:18:29.974" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=title }</msg>
+<status status="PASS" starttime="20210303 11:18:29.973" endtime="20210303 11:18:29.974"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -288,8 +273,8 @@
 <assign>
 <var>@{elementsDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:49.636" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'title'} ]</msg>
-<status status="PASS" starttime="20210226 16:19:49.635" endtime="20210226 16:19:49.636"></status>
+<msg timestamp="20210303 11:18:29.974" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'title'} ]</msg>
+<status status="PASS" starttime="20210303 11:18:29.974" endtime="20210303 11:18:29.974"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -299,21 +284,21 @@
 <assign>
 <var>&amp;{ElementParams}</var>
 </assign>
-<msg timestamp="20210226 16:19:49.636" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
-<status status="PASS" starttime="20210226 16:19:49.636" endtime="20210226 16:19:49.636"></status>
+<msg timestamp="20210303 11:18:29.975" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
+<status status="PASS" starttime="20210303 11:18:29.974" endtime="20210303 11:18:29.975"></status>
 </kw>
-<msg timestamp="20210226 16:19:49.636" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
-<status status="PASS" starttime="20210226 16:19:49.634" endtime="20210226 16:19:49.636"></status>
+<msg timestamp="20210303 11:18:29.975" level="INFO">${element} = {'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
+<status status="PASS" starttime="20210303 11:18:29.972" endtime="20210303 11:18:29.975"></status>
 </kw>
 <kw name="Verify is screen loaded" library="RobotLibrary">
 <arguments>
 <arg>${element}</arg>
 <arg>${wait}</arg>
 </arguments>
-<msg timestamp="20210226 16:19:53.246" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
-<status status="PASS" starttime="20210226 16:19:49.636" endtime="20210226 16:19:53.246"></status>
+<msg timestamp="20210303 11:18:30.021" level="INFO">{'elementData': [{'using': 'attr', 'attribute': 'name', 'value': 'title'}]}</msg>
+<status status="PASS" starttime="20210303 11:18:29.975" endtime="20210303 11:18:30.021"></status>
 </kw>
-<status status="PASS" starttime="20210226 16:19:49.633" endtime="20210226 16:19:53.246"></status>
+<status status="PASS" starttime="20210303 11:18:29.972" endtime="20210303 11:18:30.021"></status>
 </kw>
 <kw name="Get attr" library="keywords">
 <arguments>
@@ -342,8 +327,8 @@
 <assign>
 <var>${using}</var>
 </assign>
-<msg timestamp="20210226 16:19:53.247" level="INFO">${using} = using</msg>
-<status status="PASS" starttime="20210226 16:19:53.247" endtime="20210226 16:19:53.247"></status>
+<msg timestamp="20210303 11:18:30.022" level="INFO">${using} = using</msg>
+<status status="PASS" starttime="20210303 11:18:30.022" endtime="20210303 11:18:30.022"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -353,8 +338,8 @@
 <assign>
 <var>${attribute}</var>
 </assign>
-<msg timestamp="20210226 16:19:53.247" level="INFO">${attribute} = attribute</msg>
-<status status="PASS" starttime="20210226 16:19:53.247" endtime="20210226 16:19:53.247"></status>
+<msg timestamp="20210303 11:18:30.022" level="INFO">${attribute} = attribute</msg>
+<status status="PASS" starttime="20210303 11:18:30.022" endtime="20210303 11:18:30.022"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -364,8 +349,8 @@
 <assign>
 <var>${value}</var>
 </assign>
-<msg timestamp="20210226 16:19:53.248" level="INFO">${value} = value</msg>
-<status status="PASS" starttime="20210226 16:19:53.248" endtime="20210226 16:19:53.248"></status>
+<msg timestamp="20210303 11:18:30.023" level="INFO">${value} = value</msg>
+<status status="PASS" starttime="20210303 11:18:30.023" endtime="20210303 11:18:30.023"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -377,8 +362,8 @@
 <assign>
 <var>&amp;{usingDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:53.248" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=title }</msg>
-<status status="PASS" starttime="20210226 16:19:53.248" endtime="20210226 16:19:53.248"></status>
+<msg timestamp="20210303 11:18:30.024" level="INFO">&amp;{usingDic} = { using=attr | attribute=name | value=title }</msg>
+<status status="PASS" starttime="20210303 11:18:30.024" endtime="20210303 11:18:30.024"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -388,8 +373,8 @@
 <assign>
 <var>@{elementsDic}</var>
 </assign>
-<msg timestamp="20210226 16:19:53.248" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'title'} ]</msg>
-<status status="PASS" starttime="20210226 16:19:53.248" endtime="20210226 16:19:53.248"></status>
+<msg timestamp="20210303 11:18:30.025" level="INFO">@{elementsDic} = [ {'using': 'attr', 'attribute': 'name', 'value': 'title'} ]</msg>
+<status status="PASS" starttime="20210303 11:18:30.024" endtime="20210303 11:18:30.025"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -399,11 +384,11 @@
 <assign>
 <var>&amp;{ElementParams}</var>
 </assign>
-<msg timestamp="20210226 16:19:53.249" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
-<status status="PASS" starttime="20210226 16:19:53.249" endtime="20210226 16:19:53.249"></status>
+<msg timestamp="20210303 11:18:30.025" level="INFO">&amp;{ElementParams} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
+<status status="PASS" starttime="20210303 11:18:30.025" endtime="20210303 11:18:30.025"></status>
 </kw>
-<msg timestamp="20210226 16:19:53.249" level="INFO">&amp;{element} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
-<status status="PASS" starttime="20210226 16:19:53.247" endtime="20210226 16:19:53.249"></status>
+<msg timestamp="20210303 11:18:30.025" level="INFO">&amp;{element} = { elementData=[{'using': 'attr', 'attribute': 'name', 'value': 'title'}] }</msg>
+<status status="PASS" starttime="20210303 11:18:30.021" endtime="20210303 11:18:30.025"></status>
 </kw>
 <kw name="Get element" library="RobotLibrary">
 <arguments>
@@ -412,8 +397,8 @@
 <assign>
 <var>&amp;{element}</var>
 </assign>
-<msg timestamp="20210226 16:19:54.365" level="INFO">&amp;{element} = { XMLName={'Space': '', 'Local': 'Label'} | Attrs=[{'Name': {'Space': '', 'Local': 'bounds'}, 'Value': '{272, 200, 696, 56}'}, {'Name': {'Space': '', 'Local': 'color'}, 'Value': '#ddddddff'}, {'Name':...</msg>
-<status status="PASS" starttime="20210226 16:19:53.249" endtime="20210226 16:19:54.365"></status>
+<msg timestamp="20210303 11:18:31.060" level="INFO">&amp;{element} = { XMLName={'Space': '', 'Local': 'Label'} | Attrs=[{'Name': {'Space': '', 'Local': 'bounds'}, 'Value': '{272, 200, 696, 56}'}, {'Name': {'Space': '', 'Local': 'color'}, 'Value': '#ddddddff'}, {'Name':...</msg>
+<status status="PASS" starttime="20210303 11:18:30.025" endtime="20210303 11:18:31.060"></status>
 </kw>
 <kw name="Get attribute" library="RobotLibrary">
 <arguments>
@@ -423,11 +408,11 @@
 <assign>
 <var>${attributeValue}</var>
 </assign>
-<msg timestamp="20210226 16:19:54.365" level="INFO">${attributeValue} = ¡Todo lo que te gusta en un sólo lugar!</msg>
-<status status="PASS" starttime="20210226 16:19:54.365" endtime="20210226 16:19:54.366"></status>
+<msg timestamp="20210303 11:18:31.061" level="INFO">${attributeValue} = ¡Todo lo que te gusta en un sólo lugar!</msg>
+<status status="PASS" starttime="20210303 11:18:31.060" endtime="20210303 11:18:31.061"></status>
 </kw>
-<msg timestamp="20210226 16:19:54.366" level="INFO">${text} = ¡Todo lo que te gusta en un sólo lugar!</msg>
-<status status="PASS" starttime="20210226 16:19:53.247" endtime="20210226 16:19:54.366"></status>
+<msg timestamp="20210303 11:18:31.061" level="INFO">${text} = ¡Todo lo que te gusta en un sólo lugar!</msg>
+<status status="PASS" starttime="20210303 11:18:30.021" endtime="20210303 11:18:31.061"></status>
 </kw>
 <kw name="Assert Equal" library="keywords">
 <arguments>
@@ -443,10 +428,10 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210226 16:19:54.366" level="INFO">${result} = None</msg>
-<status status="PASS" starttime="20210226 16:19:54.366" endtime="20210226 16:19:54.366"></status>
+<msg timestamp="20210303 11:18:31.062" level="INFO">${result} = None</msg>
+<status status="PASS" starttime="20210303 11:18:31.062" endtime="20210303 11:18:31.062"></status>
 </kw>
-<status status="PASS" starttime="20210226 16:19:54.366" endtime="20210226 16:19:54.367"></status>
+<status status="PASS" starttime="20210303 11:18:31.062" endtime="20210303 11:18:31.063"></status>
 </kw>
 <kw name="Run if fails" library="keywords" type="teardown">
 <kw name="Run Keyword If Test Failed" library="BuiltIn">
@@ -458,17 +443,17 @@
 <arg>${roku_user}</arg>
 <arg>${roku_pass}</arg>
 </arguments>
-<status status="PASS" starttime="20210226 16:19:54.367" endtime="20210226 16:19:54.367"></status>
+<status status="PASS" starttime="20210303 11:18:31.063" endtime="20210303 11:18:31.064"></status>
 </kw>
-<status status="PASS" starttime="20210226 16:19:54.367" endtime="20210226 16:19:54.367"></status>
+<status status="PASS" starttime="20210303 11:18:31.063" endtime="20210303 11:18:31.064"></status>
 </kw>
 <tags>
 <tag>ApaText</tag>
 </tags>
-<status status="PASS" starttime="20210226 16:19:48.112" endtime="20210226 16:19:54.367" critical="yes"></status>
+<status status="PASS" starttime="20210303 11:18:29.971" endtime="20210303 11:18:31.064" critical="yes"></status>
 </test>
 <doc>Suite Landing</doc>
-<status status="PASS" starttime="20210226 16:19:31.875" endtime="20210226 16:19:54.368"></status>
+<status status="PASS" starttime="20210303 11:18:20.692" endtime="20210303 11:18:31.065"></status>
 </suite>
 <statistics>
 <total>
@@ -477,7 +462,6 @@
 </total>
 <tag>
 <stat pass="1" fail="0">ApaText</stat>
-<stat pass="1" fail="0">Incomplete</stat>
 </tag>
 <suite>
 <stat pass="2" fail="0" id="s1" name="Landing">Landing</stat>

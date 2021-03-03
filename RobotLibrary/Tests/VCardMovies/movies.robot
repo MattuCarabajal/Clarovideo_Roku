@@ -14,7 +14,7 @@ Suite Teardown  Reabrir y logout
 
 *** Test Cases ***
 Reproducir_película_con_inicio_sesion
-    [Tags]      CriticalRoute
+    [Tags]      CriticalRoute     Incompleto
     #Ubicar y seleccionar película
     Send key    Right
     Send key    Right
@@ -26,7 +26,7 @@ Reproducir_película_con_inicio_sesion
     [Teardown]  Teardown player
 
 Reproducir_película_con_registro
-    [Tags]      CriticalRoute
+    [Tags]      CriticalRoute       Incompleto
     [Setup]     Access and Register
     #Ubicar y seleccionar película
     Send key    Right
