@@ -122,7 +122,7 @@ Open channel
 
 Open channel not logged
     Launch the channel   ${channel_code}
-    Wait until      attr    name    title
+    Wait until      attr    name    btnLogin
 
 Access Registration
     Open channel not logged
