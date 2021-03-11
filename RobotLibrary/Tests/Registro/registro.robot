@@ -125,77 +125,7 @@ Test Teardown   Run if fails
     ${element}=     Element identifier      attr    name    toLogin
     Verify is screen loaded     ${element}
 
-02_0019_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_un_mail
-    [Tags]      Negative    Incomplete
-    #No se ingresa un mail
-    #Ubicar y seleccionar input "Password"
-    Send key            Down
-    Send key            Select
-    #Ingresar Contrasenia
-    Enter password      ${passValid}
-    #Buscar y aceptar Terminos y condiciones
-    Send key            Down
-    Send key            Select
-    #Ubicar y seleccionar botón "Siguiente"
-    Send key            Down
-    Send key            Select
-    #Verificar si la pantalla de error "Error ¡Lo sentimos!" se visualiza
-    ${element}=     Element identifier      attr     name    error
-    Verify is screen loaded     ${element}
-
-02_0022_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_una_contrasenia
-    [Tags]      Negative    Incomplete
-    #Seleccionar input "Correo electrónico"
-    Send key            Select
-    #Ingresar Correo electrónico
-    Enter username      ${ValidMailForErrors}
-    #No se ingresa una contrasenia
-    #Buscar y aceptar Terminos y condiciones
-    Send key            Down
-    Send key            Down
-    Send key            Select
-    #Ubicar y seleccionar botón "Siguiente"
-    Send key            Down
-    Send key            Select
-    #Verificar si la pantalla de error "Error ¡Lo sentimos!" se visualiza
-    ${element}=     Element identifier      attr     name    error
-    Verify is screen loaded     ${element}
-
-02_0021_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_tildar_terminos_y_condiciones
-    [Tags]      Negative    Incomplete
-    #Seleccionar input "Correo electrónico"
-    Send key            Select
-    #Ingresar Correo electrónico
-    Enter username      ${ValidMailForErrors}
-    #Ubicar y seleccionar input "Password"
-    Send key            Down
-    Send key            Select
-    #Ingresar Contrasenia
-    Enter password      ${passValid}
-    #No se aceptan los Términos y Condiciones
-    #Ubicar y seleccionar botón "Siguiente"
-    Send key            Down
-    Send key            Down
-    Send key            Select
-    #Verificar si la pantalla de error "Error (!) No aceptó los Términos y Condiciones." se visualiza
-    ${element}=     Element identifier      attr    name   error
-    Verify is screen loaded     ${element}
-
-02_0024_REGISTRO_Verificar_el_error_al_intentar_registrarse_con_todos_los_campos_vacios
-    [Tags]      Negative    Incomplete
-    #No se ingresa un mail
-    #No se ingresa una contrasenia
-    #No se aceptan los Términos y Condiciones
-    #Ubicar y seleccionar botón "Siguiente"
-    Send key            Down
-    Send key            Down
-    Send key            Down
-    Send key            Select
-    #Verificar si la pantalla de error "Error (!) No aceptó los Términos y Condiciones." se visualiza
-    ${element}=     Element identifier      attr     name    error
-    Verify is screen loaded     ${element}
-
-02_0030_REGISTRO_Verificar_error_al_intentar_registrarse_con_campos_usuario_y_contrasenias_vacios
+02_0038_REGISTRO_Verificar_error_al_intentar_registrarse_con_campos_usuario_y_contrasenias_vacios
     [Tags]      Negative    Incomplete
     #No se ingresa un mail
     #No se ingresa una contrasenia
@@ -210,7 +140,7 @@ Test Teardown   Run if fails
     ${element}=     Element identifier      attr     name    error
     Verify is screen loaded     ${element}
 
-02_0029_REGISTRO_Verificar_el_correcto_registro_con_datos_validos
+02_0047_REGISTRO_Verificar_el_correcto_registro_con_datos_validos
     [Tags]      CriticalRoute
     #Seleccionar campo mail
     Send key        Select
@@ -233,7 +163,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${texto}
     [Teardown]      Logout teardown
 
-02_0031_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_un_mail
+02_0033_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_un_mail
     [Tags]          Negative     Sprint5
     #Ubicar y seleccionar campo Contrasenia
     Send Key        Down
@@ -252,7 +182,7 @@ Test Teardown   Run if fails
     ${element}=     Element identifier      attr     name    error
     Verify is screen loaded     ${element}
 
-02_0032_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_tildar_terminos_y_condiciones
+02_0034_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_tildar_terminos_y_condiciones
     [Tags]          Negative     Sprint5
     #Seleccionar input "Correo electrónico"
     Send key            Select
@@ -273,7 +203,7 @@ Test Teardown   Run if fails
     ${element}=     Element identifier      attr     name    error
     Verify is screen loaded     ${element}
 
-02_0033_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_una_contrasenia
+02_0035_REGISTRO_Verificar_el_error_al_intentar_registrarse_sin_agregar_una_contrasenia
     [Tags]          Negative     Sprint5
     #Seleccionar input "Correo electrónico"
     Send key            Select
@@ -292,7 +222,7 @@ Test Teardown   Run if fails
     ${element}=     Element identifier      attr     name    error
     Verify is screen loaded     ${element}
 
-02_0034_REGISTRO_Verificar_que_se_pueda_tildar_el_checkbox_de_terminos_y_condiciones
+02_0036_REGISTRO_Verificar_que_se_pueda_tildar_el_checkbox_de_terminos_y_condiciones
     [Tags]          Sprint5        Incomplete
     #Buscar y aceptar Terminos y condiciones
     Send Key        Down
@@ -304,7 +234,7 @@ Test Teardown   Run if fails
     ${Value}        Get attr by ParentData     ${Node}      visible
     Assert Equal    ${Value}     false
 
-02_0035_REGISTRO_Verificar_el_error_al_intentar_registrarse_con_todos_los_campos_vacios
+02_0037_REGISTRO_Verificar_el_error_al_intentar_registrarse_con_todos_los_campos_vacios
     [Tags]          Negative     Sprint5
     #Buscar y seleccionar Siguiente
     Send Key        Down
