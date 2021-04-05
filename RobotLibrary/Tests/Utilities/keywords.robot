@@ -149,6 +149,7 @@ Logout
     Send key    Info
     Send key    Select
     Set press delay     2
+    Send key    Down
     Send key    Select
 
 Logout teardown
@@ -195,3 +196,38 @@ Get attr by ParentData
     &{element}=   Get element   ${DicNode}
     ${attributeValue}=   Get attribute   ${element}   ${returnValueOfAttrubyte}
     [Return]   ${attributeValue}
+
+#Search
+
+Access the search
+    Send key    Info
+    Set press delay     2
+    Send key    Select
+
+Send sam
+    Send key    down
+    Send key    select
+    Send key    up
+    Send key    select
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    select
+
+Send NotResults
+    Send key    down
+    Send key    select
+    Send key    up
+    Send key    select
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    select
+    Send key    left
+    Send key    select
