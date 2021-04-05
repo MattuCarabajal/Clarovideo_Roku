@@ -147,7 +147,6 @@ Access and login
 
 Logout
     Send key    Info
-    Send key    Select
     Set press delay     2
     Send key    Down
     Send key    Select

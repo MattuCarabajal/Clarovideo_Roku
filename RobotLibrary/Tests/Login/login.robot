@@ -228,6 +228,7 @@ Logout
     [Tags]      CriticalRoute
     [Setup]     Access and login
     Send key    Info
+    Send key    Down
     Send key    Select
     ${element}=     Element identifier  attr    name    btnLogin
     Verify is screen loaded     ${element}

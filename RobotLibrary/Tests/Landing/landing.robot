@@ -8,7 +8,7 @@ Resource        ./../Utilities/variables.robot
 
 #Recordar antes de pushear descomentar Test Setup Launch channel
 Suite Setup     Launch channel
-#Test Setup      Launch the channel  ${channel_code}
+Test Setup      Launch the channel  ${channel_code}
 Test Teardown   Run if fails
 
 *** Test Cases ***

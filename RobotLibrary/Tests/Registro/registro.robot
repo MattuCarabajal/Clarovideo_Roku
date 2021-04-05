@@ -223,7 +223,7 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 02_0036_REGISTRO_Verificar_que_se_pueda_tildar_el_checkbox_de_terminos_y_condiciones
-    [Tags]          Sprint5        Incomplete
+    [Tags]          Negative    Sprint5        Incomplete
     #Buscar y aceptar Terminos y condiciones
     Send Key        Down
     Send Key        Down
