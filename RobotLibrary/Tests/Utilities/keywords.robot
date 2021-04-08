@@ -11,18 +11,23 @@ Launch channel
     Verify is screen loaded   ${element}
 
 Login
+    #Salir del mensaje de Solicitud de información
+    #Al ser un elemento nativo de Roku no tenemos acceso al ID ni nada como para hacer una espera dinámica
+    Sleep       3
+    Send Key    Select
+    #Login
     #Seleeccionar input "Usuario"
-    Send key  Select  1
+    Send key    Select  1
     #Ingresar usuario
     Enter username      ${userMail}
     #Ubicar y seleccionar input "Password"
-    Send key  Down   1
-    Send key  Select  1
+    Send key    Down   1
+    Send key    Select  1
     #Ingresar contraseña
-    Enter password   ${pass}
+    Enter password      ${pass}
     #Ubicar y seleccionar botón "Inicia Sesion"
-    Send key  Down   1
-    Send key  Select  1
+    Send key    Down   1
+    Send key    Select  1
 
 Launch channel and login
     Side load  ${sideload}   ${roku_user}   ${roku_pass}
