@@ -14,7 +14,7 @@ Suite Teardown  Reabrir y logout
 
 *** Test Cases ***
 DeepLinking_input_Acceder_a_una_pelicula
-    [Tags]      a
+    [Tags]
     Input deep linking data     ${channel_code}     545409      movie
     Verify is playback started  25  2
 
