@@ -11,6 +11,7 @@ ${roku_pass}=               1234
 
 #Usuarios
 ${userMail}=                qaroku_matias@gmail.com
+#${userMail}=                qaroku_rebeca@gmail.com
 ${pass}=                    Prueba1!
 ${userNotRegistered}=       mailinexistente@gmail.com
 ${userNotValid}=            mailinvalido@gmail
@@ -20,4 +21,3 @@ ${ValidMailForErrors}=      prueba_automatizada@gmail.com
 
 #Tolerancia para esperar elementos
 ${wait}=                    20
-

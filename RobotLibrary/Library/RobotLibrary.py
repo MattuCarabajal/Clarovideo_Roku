@@ -354,3 +354,15 @@ class RobotLibrary:
 
         # Cerrar el navegador
         navigator.close()
+
+    @keyword("Informacion player")
+    def info_player(self, info, key):
+        position = info.get(key)
+        return position
+
+    @keyword("Comparar tiempo de reproduccion")
+    def equal_times(self, tiempo_viejo, tiempo_nuevo):
+        if tiempo_viejo >= tiempo_nuevo and (tiempo_nuevo > (tiempo_viejo - 15000)):
+            return True
+        else:
+            return False

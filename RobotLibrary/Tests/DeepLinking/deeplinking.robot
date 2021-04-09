@@ -14,22 +14,27 @@ Suite Teardown  Reabrir y logout
 
 *** Test Cases ***
 DeepLinking_Acceder_a_una_pelicula
-    Launch the channel   ${channel_code}    572460      movie
+    [Tags]      a
+    Launch the channel      ${channel_code}     572460      movie
     Verify is playback started  25  2
 
 DeepLinking_Acceder_a_una_pelicula_no_finalizada
-    [Tags]      Incomplete      a
-    Launch the channel   ${channel_code}    572460      movie
+    [Tags]      Intregracion_LastSeen
+    Launch the channel      ${channel_code}     572460      movie
     Verify is playback started  25  2
     Send Key    Fwd
     Send Key    Fwd
     Sleep       10
     Send Key    Play
     Sleep       10
-    &{current_time}=        Get player info
+    Send Key    Play
+    &{info}=    Get player info
     Send Key    Back
+    ${current_time}=        Informacion player      ${info}     Position
     Send Key    Home
-    Launch the channel   ${channel_code}    572460      movie
+    Launch the channel      ${channel_code}     572460      movie
     Verify is playback started  25  2
-    &{current_new_time}=    Get player info
-    Should Be Equal As Strings      ${current_time}     ${current_new_time}
+    &{info}=    Get player info
+    ${current_new_time}=    Informacion player      ${info}     Position
+    ${result}=      Comparar tiempo de reproduccion     ${current_time}     ${current_new_time}
+    Should Be True      ${result}
