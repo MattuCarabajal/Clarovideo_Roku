@@ -14,8 +14,8 @@ Suite Teardown  Reabrir y logout
 
 *** Test Cases ***
 DeepLinking_input_Acceder_a_una_pelicula
-    [Tags]
-    Input deep linking data     ${channel_code}     545409      movie
+    [Tags]      CriticalRoute       Sprint9     HappyPath
+    Input deep linking data     ${channel_code}     ${movie1}       movie
     Verify is playback started  25  2
 
 DeepLinking_input_Acceder_a_una_pelicula_no_finalizada

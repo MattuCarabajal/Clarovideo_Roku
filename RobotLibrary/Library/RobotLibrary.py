@@ -296,7 +296,7 @@ class RobotLibrary:
 
     @keyword("Screenshot")
     def screenshot(self, path, name, roku_user, roku_pass):
-        '''Parametros
+        '''Parámetros
                         path: directorio desde donde se ejecuta el .robot
                         name: nombre del caso ejecutado
                         roku_user: usuario dev de roku

@@ -11,7 +11,7 @@ ${roku_pass}=               1234
 
 #Usuarios
 ${userMail}=                qaroku_matias@gmail.com
-#${userMail}=                qaroku_rebeca@gmail.com
+${userMail_NoRents}=        qaroku_rebeca@gmail.com
 ${pass}=                    Prueba1!
 ${userNotRegistered}=       mailinexistente@gmail.com
 ${userNotValid}=            mailinvalido@gmail
@@ -21,3 +21,21 @@ ${ValidMailForErrors}=      prueba_automatizada@gmail.com
 
 #Tolerancia para esperar elementos
 ${wait}=                    20
+
+#ID de contenidos
+${movie1}=                  545409
+${movie2}=                  572460
+${movie3}=                  539746
+${movie4}=                  831553
+${episodeInicial1}=         794493
+${nombreEpisodeInicial1}=   Controladora-MENTE
+${episodeNoInicial1}=       794554
+${episodeInicial2}=         758667
+${nombreEpisodeInicial2}=   ¿Ahora qué?
+${episodeNoInicial2}=       758593
+${episodeInicial3}=         552129
+${nombreEpisodeInicial3}=   Piloto
+${episodeNoInicial3}=       552312
+${episodeInicial4}=         556481
+${nombreEpisodeInicial4}=   Piloto
+${episodeNoInicial4}=       556627

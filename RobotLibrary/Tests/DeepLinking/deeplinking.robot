@@ -14,9 +14,23 @@ Suite Teardown  Reabrir y logout
 
 *** Test Cases ***
 DeepLinking_Acceder_a_una_pelicula
-    [Tags]
-    Launch the channel      ${channel_code}     572460      movie
+    [Tags]      CriticalRoute       Sprint9     HappyPath
+    # Enviar comando deeplinking con launch
+    Launch the channel      ${channel_code}     ${movie1}       movie
+    # Verificar que comienza la reproducción
     Verify is playback started  25  2
+
+DeepLinking_Acceder_a_una_serie
+    [Tags]      CriticalRoute       Sprint9     HappyPath
+    # Enviar comando deeplinking del tipo launch
+    Launch the channel      ${channel_code}     ${episodeInicial1}      series
+    # Esperar 10 segundos hardcodeados. El Wait Until no funciona acá, ya que no espera a que termine toda la función
+    #   antes de seguir con el siguiente paso
+    Sleep   10
+    # Obtener campo text del elemento del título
+    ${text}=        Get attr    attr    bounds    {0, 0, 735.667, 30}   text
+    # Verificar que el texto traído es el mismo que el que debe aparecer
+    Assert Equal    ${text}     ${nombreEpisodeInicial1}
 
 DeepLinking_Acceder_a_una_pelicula_no_finalizada
     [Tags]      Intregracion_LastSeen
