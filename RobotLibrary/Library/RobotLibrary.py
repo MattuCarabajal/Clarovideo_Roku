@@ -357,8 +357,8 @@ class RobotLibrary:
 
     @keyword("Informacion player")
     def info_player(self, info, key):
-        position = info.get(key)
-        return position
+        informacion = info.get(key)
+        return informacion
 
     @keyword("Comparar tiempo de reproduccion")
     def equal_times(self, tiempo_viejo, tiempo_nuevo):
@@ -366,3 +366,6 @@ class RobotLibrary:
             return True
         else:
             return False
+
+    @keyword("Adelantar hasta el final")
+    def

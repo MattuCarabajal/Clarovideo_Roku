@@ -33,3 +33,5 @@ Ejemplo: 01_0001_LANDING_Verificar_poster_fondo_de_pantalla
 **VCardMovies:** 06
 
 **VCardSeries:** 07
+
+**DeepLinking:** 08
