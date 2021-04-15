@@ -42,13 +42,11 @@ DeepLinking_Acceder_a_una_pelicula_no_finalizada
     Send Key    Play
     Sleep       10
     Send Key    Play
-    &{info}=    Get player info
+    ${current_time}=        Informacion player      Position
     Send Key    Back
-    ${current_time}=        Informacion player      ${info}     Position
     Send Key    Home
     Launch the channel      ${channel_code}     572460      movie
     Verify is playback started  25  2
-    &{info}=    Get player info
-    ${current_new_time}=    Informacion player      ${info}     Position
+    ${current_new_time}=    Informacion player      Position
     ${result}=      Comparar tiempo de reproduccion     ${current_time}     ${current_new_time}
     Should Be True      ${result}

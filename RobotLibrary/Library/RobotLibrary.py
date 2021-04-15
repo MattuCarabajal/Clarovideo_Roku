@@ -182,7 +182,7 @@ class RobotLibrary:
         value = res['value']
         value['Position'] = int(self._getMsFromString(value['Position']))
         value['Duration'] = int(self._getMsFromString(value['Duration']))
-        return value
+        return response
 
     @keyword("Verify is playback started")
     def verifyIsPlaybackStarted(self, retries=10, delay=1):
@@ -356,7 +356,8 @@ class RobotLibrary:
         navigator.close()
 
     @keyword("Informacion player")
-    def info_player(self, info, key):
+    def info_player(self, key):
+        info = self.getPlayerInfo()
         informacion = info.get(key)
         return informacion
 
