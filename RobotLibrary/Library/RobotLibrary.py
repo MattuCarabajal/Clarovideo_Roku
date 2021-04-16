@@ -357,8 +357,11 @@ class RobotLibrary:
 
     @keyword("Informacion player")
     def info_player(self, key):
-        info = self.getPlayerInfo()
-        informacion = info.get(key)
+        response = self.getPlayerInfo()
+        res = json.loads(response.text)
+        res = json.loads(response.text)
+        value = res['value']
+        informacion = int(self._getMsFromString(value[key]))
         return informacion
 
     @keyword("Comparar tiempo de reproduccion")
