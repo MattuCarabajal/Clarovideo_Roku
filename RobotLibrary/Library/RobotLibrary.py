@@ -372,4 +372,20 @@ class RobotLibrary:
             return False
 
     @keyword("Adelantar hasta el final")
-    def
+    def adelantar(self, Duracion):
+        Position = self.info_player('Position')
+        while Position < Duracion - 2000:
+            self.pressBtn('Fwd')
+            self.pressBtn('Fwd')
+            self.pressBtn('Fwd')
+            time.sleep(6)
+            self.pressBtn('Play')
+            Position = self.info_player('Position')
+        time.sleep(2)
+
+    @keyword("Verificar inicio de contenido")
+    def equal_times(self, Position):
+        if Position <= 1000:
+            return True
+        else:
+            return False

@@ -91,11 +91,12 @@ Test Teardown   Run if fails
     Verify is screen loaded     ${element}
 
 03_0044_LOGIN_Verificar_inicio_de_sesion_exitoso
-    [Tags]      CriticalRoute
+    [Tags]      CriticalRoute       a
     #Seleeccionar input "Usuario"
     Send key    Select
+    Send key    Select
     #Ingresar usuario
-    Enter username      ${userMail}
+    Enter username      ${userMail_NoRents}
     #Ubicar y seleccionar input "Password"
     Send key    Down
     Send key    Select
@@ -105,7 +106,7 @@ Test Teardown   Run if fails
     Send key    Down
     Send key    Select
     #Verificar si el elemento "Opciones" del menú provisorio se visualiza en pantalla
-    ${element}=     Element identifier by text   text   Opciones
+    ${element}=     Element identifier by text   text   Menú
     Verify is screen loaded     ${element}
     [Teardown]  Logout teardown
 
