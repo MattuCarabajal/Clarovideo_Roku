@@ -159,7 +159,7 @@ Test Teardown   Run if fails
     Send Key        Down
     Send Key        Select
     #Verificar si entro a la home
-    ${texto}        Element identifier by text      text    Opciones
+    ${texto}        Element identifier by text      text    Menú
     Verify is screen loaded     ${texto}
     [Teardown]      Logout teardown
 

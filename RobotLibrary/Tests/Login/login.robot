@@ -105,7 +105,7 @@ Test Teardown   Run if fails
     #Ubicar y seleccionar botón "Inicia Sesion"
     Send key    Down
     Send key    Select
-    #Verificar si el elemento "Opciones" del menú provisorio se visualiza en pantalla
+    #Verificar si el elemento "Menú" del menú provisorio se visualiza en pantalla
     ${element}=     Element identifier by text   text   Menú
     Verify is screen loaded     ${element}
     [Teardown]  Logout teardown
@@ -220,8 +220,8 @@ Login with empty user and password
     Send key    Home
     #Abrir el canal
     Launch the channel      ${channel_code}
-    #Verificar si el elemento "Opciones" del menú provisorio se visualiza en pantalla
-    ${element}=     Element identifier by text   text   Opciones
+    #Verificar si el elemento "Menú" del menú provisorio se visualiza en pantalla
+    ${element}=     Element identifier by text   text   Menú
     Verify is screen loaded     ${element}
     [Teardown]  Logout teardown
 

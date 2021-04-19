@@ -158,7 +158,7 @@ Logout
 
 Logout teardown
     Sleep               3
-    Wait until text     text    Opciones
+    Wait until text     text    Menú
     Run if fails
     Logout
 

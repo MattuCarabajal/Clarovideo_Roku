@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ########################################################################
-
+import requests
 from robot.api.deco import keyword
 from webDriver import WebDriver
 from time import sleep
@@ -25,7 +25,7 @@ from datetime import datetime, timedelta
 from random import randint
 import base64
 from selenium import webdriver
-from variables import ip_roku
+from variables import ip_roku, endpoint_mfw ,endpoint_cvr
 from selenium.webdriver.common.keys import Keys
 
 
@@ -389,3 +389,36 @@ class RobotLibrary:
             return True
         else:
             return False
+
+    def _get(self, request_url: str, data: object):
+        return requests.get(url = request_url, data = json.dumps(data))
+
+    def call_api(self, api, data):
+        api = api.lower()
+        if api == 'login':
+            endpoint = endpoint_mfw
+            route = '/services/user/login?'
+        elif api == 'register':
+            endpoint = endpoint_mfw
+            route = '/services/user/register?'
+        elif api == 'predictive':
+            endpoint = endpoint_mfw
+            route = '/services/search/predictive?'
+        elif api == 'content_data':
+            endpoint = endpoint_mfw
+            route = '/services/content/data?'
+        elif api == 'seenlast':
+            endpoint = endpoint_mfw
+            route = '/services/user/seenlast?'
+        elif api == 'getmedia':
+            endpoint = endpoint_mfw
+            route = '/services/player/getmedia?'
+        elif api == 'level_user':
+            endpoint = endpoint_mfw
+            route = '/services/cms/leveluser?'
+        elif api == 'level':
+            endpoint = endpoint_mfw
+            route = '/services/cms/level?'
+        elif api == 'favorited':
+            endpoint = endpoint_mfw
+            route = '/services/user/favorited?'
