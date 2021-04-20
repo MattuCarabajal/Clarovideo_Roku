@@ -15,15 +15,16 @@ Resource        ./../Utilities/variables.robot
 *** Test Cases ***
 
 05_0002_BUSCADOR_Verificar_texto_buscador
-    [Tags]    a
+    [Tags]
     ${text}=        Element identifier by text    text    Búsqueda
     Verify is screen loaded    ${text}
 
-05_0012_BUSCADOR_Verificar_objeto_mensaje_contenido_no_encontrado_contenga_texto
+05_0013_BUSCADOR_Verificar_objeto_mensaje_contenido_no_encontrado_contenga_el_texto_no_econtrado_en_negritas
     [Tags]
     Send NotResults
     ${element}=     Element identifier by text   text    Lo sentimos. Parece que no hay coincidencias para: SAML.\n\nUtiliza otras palabras clave, busca el nombre del actor o director o prueba con un género.
     Verify is screen loaded     ${element}
+
 
 
 

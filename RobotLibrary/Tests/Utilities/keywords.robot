@@ -206,6 +206,9 @@ Get attr by ParentData
 Access the search
     Send key    Info
     Set press delay     2
+    Send key    Down
+    Set press delay     2
+    Send key    Down
     Send key    Select
 
 Send sam
@@ -235,3 +238,43 @@ Send NotResults
     Send key    select
     Send key    left
     Send key    select
+
+Search Movie
+    Send key    select
+    Send key    right
+    Send key    select
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    select
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    select
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    select
+
+Search Serie
+    Send key    select
+    Send key    right
+    Send key    select
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    select
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    select
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    select
+
