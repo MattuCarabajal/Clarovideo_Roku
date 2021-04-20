@@ -39,3 +39,6 @@ ${episodeNoInicial3}=       552312
 ${episodeInicial4}=         556481
 ${nombreEpisodeInicial4}=   Piloto
 ${episodeNoInicial4}=       556627
+
+#Region
+${region}=                  mexico
