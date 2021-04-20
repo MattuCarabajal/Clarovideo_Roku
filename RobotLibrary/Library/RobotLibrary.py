@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ########################################################################
+import os
+
 import requests
 from robot.api.deco import keyword
 from webDriver import WebDriver
@@ -25,7 +27,7 @@ from datetime import datetime, timedelta
 from random import randint
 import base64
 from selenium import webdriver
-from variables import ip_roku, endpoint_mfw ,endpoint_cvr
+from variables import ip_roku, endpoint_mfw, endpoint_cvr
 from selenium.webdriver.common.keys import Keys
 
 
@@ -359,28 +361,29 @@ class RobotLibrary:
     def info_player(self, key):
         response = self.getPlayerInfo()
         res = json.loads(response.text)
-        res = json.loads(response.text)
         value = res['value']
-        informacion = int(self._getMsFromString(value[key]))
+        informacion = self._getMsFromString(value[key])
         return informacion
 
     @keyword("Comparar tiempo de reproduccion")
     def equal_times(self, tiempo_viejo, tiempo_nuevo):
-        if tiempo_viejo >= tiempo_nuevo and (tiempo_nuevo > (tiempo_viejo - 15000)):
+        tiempo_viejo = int(tiempo_viejo)
+        tiempo_nuevo = int(tiempo_nuevo)
+        if (tiempo_viejo >= tiempo_nuevo) and (tiempo_nuevo > (tiempo_viejo - 15000)):
             return True
         else:
             return False
 
     @keyword("Adelantar hasta el final")
     def adelantar(self, Duracion):
-        Position = self.info_player('Position')
+        Position = int(self.info_player('Position'))
         while Position < Duracion - 2000:
             self.pressBtn('Fwd')
             self.pressBtn('Fwd')
             self.pressBtn('Fwd')
             time.sleep(6)
             self.pressBtn('Play')
-            Position = self.info_player('Position')
+            Position = int(self.info_player('Position'))
         time.sleep(2)
 
     @keyword("Verificar inicio de contenido")
@@ -390,35 +393,156 @@ class RobotLibrary:
         else:
             return False
 
-    def _get(self, request_url: str, data: object):
-        return requests.get(url = request_url, data = json.dumps(data))
+    def _get(self, request_url: str, params: object):
+        params = str(params)
+        params = params.replace('\'', '')
+        params = params.replace(':', '=')
+        params = params.replace(' ', '')
+        params = params.replace(',', '&')
+        params = params.replace('{', '')
+        params = params.replace('}', '')
+        request_url = request_url + params
+        return requests.get(url=request_url)
 
-    def call_api(self, api, data):
-        api = api.lower()
-        if api == 'login':
-            endpoint = endpoint_mfw
-            route = '/services/user/login?'
-        elif api == 'register':
-            endpoint = endpoint_mfw
-            route = '/services/user/register?'
-        elif api == 'predictive':
-            endpoint = endpoint_mfw
-            route = '/services/search/predictive?'
-        elif api == 'content_data':
-            endpoint = endpoint_mfw
-            route = '/services/content/data?'
-        elif api == 'seenlast':
-            endpoint = endpoint_mfw
-            route = '/services/user/seenlast?'
-        elif api == 'getmedia':
-            endpoint = endpoint_mfw
-            route = '/services/player/getmedia?'
-        elif api == 'level_user':
-            endpoint = endpoint_mfw
-            route = '/services/cms/leveluser?'
-        elif api == 'level':
-            endpoint = endpoint_mfw
-            route = '/services/cms/level?'
-        elif api == 'favorited':
-            endpoint = endpoint_mfw
-            route = '/services/user/favorited?'
+    def params_standar_api_cv(self, version):
+        parametros = {'api_version': version,
+                      'authpn': 'roku',
+                      'authpt': 'IdbIIWeFzYdy',
+                      'device_category': 'stb',
+                      'device_manufacturer': 'roku',
+                      'device_model': 'generic',
+                      'device_type': 'generic',
+                      'format': 'json',
+                      'HKS': 'web60467cec0114e'}
+        return parametros
+
+    def get_key(self, directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5, nodo_6, nodo_7):
+        if not nodo_1:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[key]
+        elif not nodo_2:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[nodo_1][key]
+        elif not nodo_3:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[nodo_1][nodo_2][key]
+        elif not nodo_4:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[nodo_1][nodo_2][nodo_3][key]
+        elif not nodo_5:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][key]
+        elif not nodo_6:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][nodo_5][key]
+        elif not nodo_7:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][nodo_5][nodo_6][key]
+        else:
+            with open(directory_name, 'r') as fp:
+                data_login = json.load(fp)
+            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][nodo_5][nodo_6][nodo_7][key]
+
+    @keyword("Login by API")
+    def login(self, user, password):
+        endpoint = endpoint_mfw
+        route = '/services/user/login?'
+        url = endpoint + route
+        params = self.params_standar_api_cv('v5.86')
+        params.update({'includPaywayProfile': '1',
+                           'password': password,
+                           'username': user,
+                           # Funciona igual sin appversion
+                           'appversion': '1.0.00001'})
+        response = self._get(url, params)
+        res = json.loads(response.text)
+        value = res['response']
+        directory = os.getcwd()
+        file_name = '\data\login_data.json'
+        directory_name = directory + file_name
+        with open(directory_name, 'w') as fp:
+            json.dump(value, fp)
+
+    @keyword("Login Data")
+    def login_data(self, key, nodo_1="", nodo_2="", nodo_3="", nodo_4="", nodo_5=""):
+        directory = os.getcwd()
+        file_name = '\data\login_data.json'
+        directory_name = directory + file_name
+        return self.get_key(directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5)
+
+    @keyword("Purchase by API")
+    def purchase(self, region, user_id, group_id):
+        endpoint = endpoint_mfw
+        route = '/services/payway/purchasebuttoninfo?'
+        url = endpoint + route
+        params = self.params_standar_api_cv('v5.92')
+        params.update({'region': region,
+                       'user_id': user_id,
+                       'group_id': group_id})
+        response = self._get(url, params)
+        res = json.loads(response.text)
+        value = res['response']
+        directory = os.getcwd()
+        file_name = '/data/purchase_data.json'
+        directory_name = directory + file_name
+        with open(directory_name, 'w') as fp:
+            json.dump(value, fp)
+
+    @keyword("Purchase Data")
+    def purchase_data(self, key, nodo_1="", nodo_2="", nodo_3="", nodo_4="", nodo_5=""):
+        directory = os.getcwd()
+        file_name = '/data/purchase_data.json'
+        directory_name = directory + file_name
+        return self.get_key(directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5)
+
+    @keyword("Getmedia by API")
+    def getmedia(self, region, user_id, group_id, user_token, payway_token):
+        endpoint = endpoint_mfw
+        route = '/services/player/getmedia?'
+        url = endpoint + route
+        params = self.params_standar_api_cv('5.92')
+        params.update({'region': region,
+                       'user_id': user_id,
+                       'group_id': group_id,
+                       'user_token': user_token,
+                       'payway_token': payway_token,
+                       'device_id': 'f7785395-3dc0-5ca4-b2bd-b4e6346221e3',
+                       'preview': 0,
+                       'quality': 'HD',
+                       'stream_type': 'smooth_streaming',
+                       # Funciona igual sin appversion
+                       'appversion': '1.0.00001'})
+        response = self._get(url, params)
+        res = json.loads(response.text)
+        value = res['response']
+        directory = os.getcwd()
+        file_name = '/data/getmedia_data.json'
+        directory_name = directory + file_name
+        with open(directory_name, 'w') as fp:
+            json.dump(value, fp)
+
+    @keyword("Getmedia Data")
+    def getmedia_data(self, key, nodo_1="", nodo_2="", nodo_3="", nodo_4="", nodo_5=""):
+        directory = os.getcwd()
+        file_name = '/data/getmedia_data.json'
+        directory_name = directory + file_name
+        return self.get_key(directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5)
+
+    '''
+    route = '/services/payway/purchasebuttoninfo?'
+    route = '/services/player/getmedia?'
+    route = '/services/user/register?'
+    route = '/services/cms/level?'
+    route = '/services/cms/leveluser?'
+    route = '/services/user/favorited?'
+    route = '/services/search/predictive?'
+    route = '/services/content/data?'
+    route = '/services/user/seenlast?'
+    '''
