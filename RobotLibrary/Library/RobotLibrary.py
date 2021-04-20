@@ -364,7 +364,7 @@ class RobotLibrary:
         informacion = int(self._getMsFromString(value[key]))
         return informacion
 
-    @keyword("Comparar tiempo de reproduccion")
+    @keyword('Comparar tiempo de reproduccion')
     def equal_times(self, tiempo_viejo, tiempo_nuevo):
         if tiempo_viejo >= tiempo_nuevo and (tiempo_nuevo > (tiempo_viejo - 15000)):
             return True
@@ -383,9 +383,21 @@ class RobotLibrary:
             Position = self.info_player('Position')
         time.sleep(2)
 
+    @keyword("Adelantar")
+    def adelantar(self, Duracion):
+        Position = self.info_player('Position')
+        while Position < Duracion - 2000:
+            self.pressBtn('Fwd')
+            self.pressBtn('Fwd')
+            self.pressBtn('Fwd')
+            time.sleep(6)
+            self.pressBtn('Play')
+            Position = self.info_player('Position')
+
+
     @keyword("Verificar inicio de contenido")
     def equal_times(self, Position):
-        if Position <= 1000:
+        if Position <= 5000:
             return True
         else:
             return False

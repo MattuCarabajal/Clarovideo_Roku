@@ -17,7 +17,7 @@ Login
     Send Key    Select
     #Login
     #Seleeccionar input "Usuario"
-    Send key    Select  1
+    Send key    Select
     #Ingresar usuario
     Enter username      ${userMail_NoRents}
     #Ubicar y seleccionar input "Password"
@@ -30,10 +30,9 @@ Login
     Send key    Select  1
 
 Launch channel and login
-    Side load  ${sideload}   ${roku_user}   ${roku_pass}
-    ${element}=   Element identifier    attr    name    btnLogin
-    Verify is screen loaded   ${element}
-    Access Login
+    Launch channel
+    Send Key    Down
+    Send key    Select
     Login
 
 Register
@@ -121,9 +120,7 @@ Assert Equal
     [Return]   ${result}
 
 Open channel
-    Launch the channel  ${channel_code}
-    Wait until text     text    Claro video te recomienda
-    #Sleep   7
+    Launch the channel    ${channel_code}
 
 Open channel not logged
     Launch the channel   ${channel_code}
@@ -140,7 +137,7 @@ Access and Register
     #Sleep   7
 
 Access Login
-    Open channel not logged
+    #Open channel not logged
     Send Key   Down
     Send Key   Select
 
@@ -154,7 +151,10 @@ Logout
     Send key    Info
     Set press delay     2
     Send key    Down
+    Send key    Down
+    Send key    Down
     Send key    Select
+    Sleep       2
 
 Logout teardown
     Sleep               3
