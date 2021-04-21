@@ -15,7 +15,7 @@ Test Setup      Open channel
 *** Test Cases ***
 08_0019_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_visualizada_previamente_usando_el_input
     [Tags]      CriticalRoute       Sprint9     HappyPath
-    Input deep linking data      ${channel_code}     ${movie1}       movie
+    Input deep linking data    ${channel_code}     ${movie1}       movie
     Sleep   5
     Verify is playback started  25  2
     #Verificar que inicio desde el comienzo
@@ -24,9 +24,9 @@ Test Setup      Open channel
     Should Be True      ${result}
 
 08_0020_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_finalizada_usando_el_input
-    [Tags]      Intregracion_LastSeen
+    [Tags]      Intregracion_LastSeen    k
     # Enviar comando deeplinking con input
-    Input deep linking data        ${channel_code}     572460      movie
+    Input deep linking data    ${channel_code}     ${movie1}       movie
     Sleep   5
     # Verificar que comienza la reproducción
     Verify is playback started  25  2
@@ -118,9 +118,9 @@ Test Setup      Open channel
     Should Be True      ${result}
 
 08_0024_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_primer_episodio_haya_sido_finalizado_usando_el_input
-    [Tags]      q
+    [Tags]      qj
     # Enviar comando deeplinking con input
-    Input deep linking data        ${channel_code}     ${episodeInicial1}      episode
+    Input deep linking data               ${channel_code}     ${episodeInicial1}      episode
     Sleep   5
     # Verificar que comienza la reproducción
     Verify is playback started  25  2
@@ -142,7 +142,7 @@ Test Setup      Open channel
     Should Be True      ${result}
 
 08_0025_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_otro_episodio_no_haya_sido_finalizado_usando_el_input
-    [Tags]      Intregracion_LastSeen       q
+    [Tags]      Intregracion_LastSeen
     # Enviar comando deeplinking con input
     Input deep linking data               ${channel_code}     758667     episode
     Sleep   5
@@ -160,7 +160,7 @@ Test Setup      Open channel
 
 
 08_0027_DEEPLINKING_Acceder_con_deep_linking_a_una_vcard_de_una_serie_usando_season_usando_el_input
-    [Tags]      CriticalRoute      q
+    [Tags]      CriticalRoute
     # Enviar comando deeplinking del tipo launch
     Input deep linking data               ${channel_code}     ${episodeInicial2}      season
     #Verificar que cargo la VCard

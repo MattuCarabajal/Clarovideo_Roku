@@ -36,6 +36,10 @@ Launch channel and login
     Login
 
 Register
+    #Salir del mensaje de Solicitud de información
+    #Al ser un elemento nativo de Roku no tenemos acceso al ID ni nada como para hacer una espera dinámica
+    Sleep       3
+    Send Key    Select
     #Seleccionar campo mail
     Send key   Select
     #Introducir mail
@@ -120,7 +124,7 @@ Assert Equal
     [Return]   ${result}
 
 Open channel
-    Launch the channel    ${channel_code}
+    Side load  ${sideload}   ${roku_user}   ${roku_pass}
 
 Open channel not logged
     Launch the channel   ${channel_code}
@@ -163,7 +167,6 @@ Logout teardown
     Logout
 
 Reabrir Canal
-    Send key        home
     Open channel
 
 Wait until
@@ -178,6 +181,7 @@ Wait until text
 
 Reabrir y logout
     Reabrir Canal
+    sleep   5
     Logout
 
 Get element by parentData
@@ -239,34 +243,69 @@ Send NotResults
     Send key    left
     Send key    select
 
+#Buscar el Patriota
 Search Movie
+    Send key    left
+    Send key    left
+    Send key    left
     Send key    select
-    Send key    right
-    Send key    select
-    Send key    right
-    Send key    right
-    Send key    right
-    Send key    select
-    Send key    right
-    Send key    right
     Send key    right
     Send key    right
     Send key    right
     Send key    select
     Send key    down
+    Send key    right
+    Send key    select
+    Send key    left
+    Send key    left
+    Send key    Up
+    Send key    select
     Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    select
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    select
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    down
+    Send key    select
     Send key    down
     Send key    down
     Send key    select
 
+#Buscar Beakman
 Search Serie
-    Send key    select
     Send key    right
     Send key    select
     Send key    right
     Send key    right
     Send key    right
     Send key    select
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    left
+    Send key    select
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
+    Send key    right
     Send key    right
     Send key    right
     Send key    right
@@ -276,5 +315,51 @@ Search Serie
     Send key    down
     Send key    down
     Send key    down
-    Send key    select
+    Send key    Select
+
+Seleccionar Movie Catalogo
+    Send key    down
+    Send key    down
+    Send key    Select
+
+Seleccionar Serie Catalogo
+    Send key    Down
+    Send key    Select
+
+Seleccionar movie
+    Send key    down
+    Set press delay     2
+    Send key    down
+    Send key    down
+    Send key    down
+    Set press delay     2
+    Send key    down
+    Send key    down
+    Set press delay     2
+    Send key    down
+    Send key    down
+    Send key    down
+    Set press delay     2
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    Select
+
+Seleccionar serie
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    down
+    Set press delay     2
+    Send key    down
+    Send key    down
+    Send key    down
+    Send key    Select
+
+Acceder Catalogo
+    Send key    Info
+    Set press delay     2
+    Send key    Down
+    Send key    Select
+    Sleep   3
 

@@ -1,16 +1,20 @@
-Revisar los casos de deeplinking de series (mediatype)
--------Terminar los casos de input y de launch
-5   Crear keywords de diferentes busquedas
-6   Meterle al search
-!   Hacer las rutas criticas usando el search
-2   Arreglar los casos de vcard ubicandonos en el carrusel para cada mediatype
+Revisar los casos de deeplinking de series (mediatype) - Done
+-------Terminar los casos de input y de launch - Done
+   Crear keywords de diferentes busquedas   - Done
+   Meterle al search     - Done
+   Hacer las rutas criticas usando el search       - Done
+    Reemplazar en todos los casos que apliquen el cambio de 'opciones' a 'menú' - Done
 
+
+
+
+
+2   Arreglar los casos de vcard ubicandonos en el carrusel para cada mediatype
 
 7   Realiza test cases vcard series
 8   Automatización de vcard series y movies
 
-1   Reemplazar en todos los casos que apliquen el cambio de 'opciones' a 'menú' - Done
-
-
 4   Realizar automatización de Endcard - In progress
 !!!!Comentar casos
+
+Mega Regresion
