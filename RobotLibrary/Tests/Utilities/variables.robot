@@ -42,3 +42,15 @@ ${episodeNoInicial4}=       556627
 
 #Region
 ${region}=                  mexico
+
+#Get Data
+${login}=                   /data/login_data.json
+${register}=                /services/user/register?
+${purchase}=                /data/purchase_data.json
+${getmedia}=                /data/getmedia_data.json
+${level}=                   /services/cms/level?
+${levelUser}=               /services/cms/leveluser?
+${favorited}=               /services/user/favorited?
+${predictive}=              /services/search/predictive?
+${contentData}=             /services/content/data?
+${seelLast}=                /services/user/seenlast?
