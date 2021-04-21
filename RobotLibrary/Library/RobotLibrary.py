@@ -416,39 +416,45 @@ class RobotLibrary:
                       'HKS': 'web60467cec0114e'}
         return parametros
 
-    def get_key(self, directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5, nodo_6, nodo_7):
-        if not nodo_1:
+    @keyword("${file_name} Data ${node_and_key}")
+    def get_data(self, file_name, node_and_key):
+        #key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5, nodo_6, nodo_7
+        directory = os.getcwd()
+        directory_name = directory + file_name
+        node_and_key = node_and_key.split(".")
+        node_and_key.pop(0)
+        if len(node_and_key) == 1:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[key]
-        elif not nodo_2:
+            return data_login[node_and_key[0]]
+        elif len(node_and_key) == 2:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[nodo_1][key]
-        elif not nodo_3:
+            return data_login[node_and_key[0]][node_and_key[1]]
+        elif len(node_and_key) == 3:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[nodo_1][nodo_2][key]
-        elif not nodo_4:
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]]
+        elif len(node_and_key) == 4:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[nodo_1][nodo_2][nodo_3][key]
-        elif not nodo_5:
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]]
+        elif len(node_and_key) == 5:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][key]
-        elif not nodo_6:
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]]
+        elif len(node_and_key) == 6:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][nodo_5][key]
-        elif not nodo_7:
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][node_and_key[5]]
+        elif not len(node_and_key) == 7:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][nodo_5][nodo_6][key]
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][node_and_key[5]][node_and_key[6]]
         else:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[nodo_1][nodo_2][nodo_3][nodo_4][nodo_5][nodo_6][nodo_7][key]
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][node_and_key[5]][node_and_key[6]][node_and_key[7]]
 
     @keyword("Login by API")
     def login(self, user, password):
@@ -470,13 +476,6 @@ class RobotLibrary:
         with open(directory_name, 'w') as fp:
             json.dump(value, fp)
 
-    @keyword("Login Data")
-    def login_data(self, key, nodo_1="", nodo_2="", nodo_3="", nodo_4="", nodo_5=""):
-        directory = os.getcwd()
-        file_name = '\data\login_data.json'
-        directory_name = directory + file_name
-        return self.get_key(directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5)
-
     @keyword("Purchase by API")
     def purchase(self, region, user_id, group_id):
         endpoint = endpoint_mfw
@@ -494,13 +493,6 @@ class RobotLibrary:
         directory_name = directory + file_name
         with open(directory_name, 'w') as fp:
             json.dump(value, fp)
-
-    @keyword("Purchase Data")
-    def purchase_data(self, key, nodo_1="", nodo_2="", nodo_3="", nodo_4="", nodo_5=""):
-        directory = os.getcwd()
-        file_name = '/data/purchase_data.json'
-        directory_name = directory + file_name
-        return self.get_key(directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5)
 
     @keyword("Getmedia by API")
     def getmedia(self, region, user_id, group_id, user_token, payway_token):
@@ -527,22 +519,3 @@ class RobotLibrary:
         directory_name = directory + file_name
         with open(directory_name, 'w') as fp:
             json.dump(value, fp)
-
-    @keyword("Getmedia Data")
-    def getmedia_data(self, key, nodo_1="", nodo_2="", nodo_3="", nodo_4="", nodo_5=""):
-        directory = os.getcwd()
-        file_name = '/data/getmedia_data.json'
-        directory_name = directory + file_name
-        return self.get_key(directory_name, key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5)
-
-    '''
-    route = '/services/payway/purchasebuttoninfo?'
-    route = '/services/player/getmedia?'
-    route = '/services/user/register?'
-    route = '/services/cms/level?'
-    route = '/services/cms/leveluser?'
-    route = '/services/user/favorited?'
-    route = '/services/search/predictive?'
-    route = '/services/content/data?'
-    route = '/services/user/seenlast?'
-    '''
