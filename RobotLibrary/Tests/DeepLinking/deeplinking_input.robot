@@ -14,7 +14,7 @@ Test Setup      Open channel
 
 *** Test Cases ***
 08_0019_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_visualizada_previamente_usando_el_input
-    [Tags]      CriticalRoute       Sprint9     HappyPath
+    [Tags]      CriticalRoute
     Input deep linking data    ${channel_code}     ${movie1}       movie
     Sleep   5
     Verify is playback started  25  2
@@ -24,7 +24,7 @@ Test Setup      Open channel
     Should Be True      ${result}
 
 08_0020_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_finalizada_usando_el_input
-    [Tags]      Intregracion_LastSeen    k
+    [Tags]      Intregracion_LastSeen
     # Enviar comando deeplinking con input
     Input deep linking data    ${channel_code}     ${movie1}       movie
     Sleep   5
@@ -118,7 +118,7 @@ Test Setup      Open channel
     Should Be True      ${result}
 
 08_0024_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_primer_episodio_haya_sido_finalizado_usando_el_input
-    [Tags]      qj
+    [Tags]      Intregracion_LastSeen
     # Enviar comando deeplinking con input
     Input deep linking data               ${channel_code}     ${episodeInicial1}      episode
     Sleep   5

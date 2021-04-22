@@ -25,7 +25,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True      ${result}
 
 08_0002_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_finalizada_usando_launch_con_usuario_logueado
-    [Tags]      Intregracion_LastSeen       NoreconoceKeyword
+    [Tags]      Intregracion_LastSeen
     [Setup]     Send key    Home
     # Enviar comando deeplinking con launch
     Launch the channel              ${channel_code}     ${movie1}      movie
@@ -54,7 +54,7 @@ Resource        ./../Utilities/variables.robot
 
 
 08_0003_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_finalizada_usando_launch_con_usuario_logueado
-    [Tags]      NoreconoceKeyword
+    [Tags]
     [Setup]     Send key    Home
     # Enviar comando deeplinking con launch
     Launch the channel                ${channel_code}     572460      movie
@@ -78,7 +78,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True      ${result}
 
 08_0004_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_no_visualizada_previamente_usando_launch_con_usuario_logueado
-    [Tags]      CriticalRoute       Sprint9     HappyPath
+    [Tags]      CriticalRoute      HappyPath
     [Setup]     Send key    Home
     # Enviar comando deeplinking del tipo launch
     Launch the channel               ${channel_code}     ${episodeInicial1}      episode
@@ -90,7 +90,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True      ${result}
 
 08_0005_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_primer_episodio_no_haya_sido_finalizado_usando_launch_con_usuario_logueado
-    [Tags]      Intregracion_LastSeen       NoreconoceKeyword       q
+    [Tags]      Intregracion_LastSeen
     [Setup]     Send key    Home
     # Enviar comando deeplinking con launch
     Launch the channel               ${channel_code}     ${episodeInicial1}      episode
@@ -118,7 +118,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True      ${result}
 
 08_0006_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_primer_episodio_haya_sido_finalizado_usando_launch_con_usuario_logueado
-    [Tags]       IncompleteEncard
+    #[Tags]      Falta automatización de la Endcard para automatizar las series cuando finalizan
     [Setup]     Send key    Home
     # Enviar comando deeplinking con launch
     Launch the channel               ${channel_code}     ${episodeInicial1}      episode
@@ -142,7 +142,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True      ${result}
 
 08_0007_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_otro_episodio_no_haya_sido_finalizado_usando_launch_con_usuario_logueado
-    [Tags]      CriticalRoute       Sprint9     HappyPath
+    [Tags]      CriticalRoute
     [Setup]     Send key    Home
     # Enviar comando deeplinking del tipo launch
     Launch the channel               ${channel_code}     ${episodeNoInicial3}      episode
@@ -157,7 +157,7 @@ Resource        ./../Utilities/variables.robot
     Assert Equal    ${text}     Domingo en el parque con Fran
 
 08_0009_DEEPLINKING_Acceder_con_deep_linking_a_una_vcard_de_una_serie_usando_season_usando_launch_con_usuario_logueado
-    [Tags]      CriticalRoute       Sprint9     HappyPath
+    [Tags]      CriticalRoute
     [Setup]     Send key    Home
     # Enviar comando deeplinking del tipo launch
     Launch the channel               ${channel_code}     ${episodeInicial1}      season
@@ -180,7 +180,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True          ${result}
 
 08_0011_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_finalizada_usando_el_launch_sin_estar_logueado
-    [Tags]      Intregracion_LastSeen      NoreconoceKeyword
+    [Tags]      Intregracion_LastSeen
     [Setup]     Reabrir y logout
     # Enviar comando deeplinking del tipo launch, se debe cambiar el ContentId cada vez que se ejecute la prueba
     Launch the channel                ${channel_code}      ${movie3}       movie
@@ -210,7 +210,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True           ${result}
 
 08_0012_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_finalizada_usando_el_launch_sin_estar_logueado
-    [Tags]      Intregracion_LastSeen
+    [Tags]
     [Setup]     Reabrir y logout
     # Enviar comando deeplinking del tipo launch
     Launch the channel                ${channel_code}      ${movie3}       movie
@@ -235,7 +235,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True          ${result}
 
 08_0013_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_no_visualizada_previamente_usando_el_launch_sin_estar_logueado
-    [Tags]      Intregracion_LastSeen
+    [Tags]
     [Setup]     Reabrir y logout
     # Enviar comando deeplinking del tipo launch
     Launch the channel                     ${channel_code}     ${episodeInicial1}      episode
@@ -249,7 +249,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True          ${result}
 
 08_0014_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_primer_episodio_no_haya_sido_finalizado_usando_el_launch_sin_estar_logueado
-    [Tags]      Intregracion_LastSeen      NoreconoceKeyword
+    [Tags]      Intregracion_LastSeen
     [Setup]     Reabrir y logout
     # Enviar comando deeplinking con launch
     Launch the channel                    ${channel_code}     ${episodeInicial1}      episode
@@ -279,7 +279,7 @@ Resource        ./../Utilities/variables.robot
     Should Be True      ${result}
 
 08_0015_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_primer_episodio_haya_sido_finalizado_usando_el_launch_sin_estar_logueado
-    [Tags]      IncompleteEncard
+    #[Tags]      Falta automatización de la Endcard para automatizar las series cuando finalizan
     [Setup]     Reabrir y logout
     # Enviar comando deeplinking del tipo launch
     Launch the channel               ${channel_code}     ${episodeInicial1}      episode
