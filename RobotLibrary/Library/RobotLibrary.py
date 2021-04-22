@@ -388,7 +388,6 @@ class RobotLibrary:
             self.pressBtn('Play')
             Position = self.info_player('Position')
 
-
     @keyword("Verificar inicio de contenido")
     def equal_times(self, Position):
         if Position <= 5000:
@@ -421,11 +420,18 @@ class RobotLibrary:
 
     @keyword("${file_name} Data ${node_and_key}")
     def get_data(self, file_name, node_and_key):
-        #key, nodo_1, nodo_2, nodo_3, nodo_4, nodo_5, nodo_6, nodo_7
         directory = os.getcwd()
         directory_name = directory + file_name
         node_and_key = node_and_key.split(".")
-        node_and_key.pop(0)
+        for a in range(0, len(node_and_key)):
+            try:
+                node_and_key[a] = int(node_and_key[a])
+                print('int: ' + node_and_key[a])
+            except:
+                print('NotAnInteger: ' + node_and_key[a])
+                bo = False
+        if node_and_key[0] == 'response' or node_and_key[0] == 'errors':
+            node_and_key.pop(0)
         if len(node_and_key) == 1:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
@@ -449,15 +455,18 @@ class RobotLibrary:
         elif len(node_and_key) == 6:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][node_and_key[5]]
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][
+                node_and_key[5]]
         elif not len(node_and_key) == 7:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][node_and_key[5]][node_and_key[6]]
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][
+                node_and_key[5]][node_and_key[6]]
         else:
             with open(directory_name, 'r') as fp:
                 data_login = json.load(fp)
-            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][node_and_key[5]][node_and_key[6]][node_and_key[7]]
+            return data_login[node_and_key[0]][node_and_key[1]][node_and_key[2]][node_and_key[3]][node_and_key[4]][
+                node_and_key[5]][node_and_key[6]][node_and_key[7]]
 
     @keyword("Login by API")
     def login(self, user, password):
@@ -466,13 +475,16 @@ class RobotLibrary:
         url = endpoint + route
         params = self.params_standar_api_cv('v5.86')
         params.update({'includPaywayProfile': '1',
-                           'password': password,
-                           'username': user,
-                           # Funciona igual sin appversion
-                           'appversion': '1.0.00001'})
+                       'password': password,
+                       'username': user,
+                       # Funciona igual sin los siguientes parametros
+                       'appversion': '1.0.00001'})
         response = self._get(url, params)
         res = json.loads(response.text)
-        value = res['response']
+        if res['status'] == '0':
+            value = res['response']
+        else:
+            value = res['errors']
         directory = os.getcwd()
         file_name = '\data\login_data.json'
         directory_name = directory + file_name
@@ -490,7 +502,10 @@ class RobotLibrary:
                        'group_id': group_id})
         response = self._get(url, params)
         res = json.loads(response.text)
-        value = res['response']
+        if res['status'] == '0':
+            value = res['response']
+        else:
+            value = res['errors']
         directory = os.getcwd()
         file_name = '/data/purchase_data.json'
         directory_name = directory + file_name
@@ -512,13 +527,90 @@ class RobotLibrary:
                        'preview': 0,
                        'quality': 'HD',
                        'stream_type': 'smooth_streaming',
-                       # Funciona igual sin appversion
+                       # Funciona igual sin los siguientes parametros
                        'appversion': '1.0.00001'})
         response = self._get(url, params)
         res = json.loads(response.text)
-        value = res['response']
+        try:
+            value = res['response']
+        except KeyError:
+            value = res['errors']
         directory = os.getcwd()
         file_name = '/data/getmedia_data.json'
         directory_name = directory + file_name
         with open(directory_name, 'w') as fp:
             json.dump(value, fp)
+
+    @keyword("Register by API")
+    def register(self, region, user, password, firstname="", lastname=""):
+        endpoint = endpoint_mfw
+        route = '/services/user/register?'
+        url = endpoint + route
+        params = self.params_standar_api_cv('v5.86')
+        params.update({'region': region,
+                       'includPaywayProfile': 'true',
+                       'email': user,
+                       'password': password,
+                       'accepterms': 1,
+                       # Funciona igual sin los siguientes parametros
+                       'firstname': firstname,
+                       'lastname': lastname})
+        response = self._get(url, params)
+        res = json.loads(response.text)
+        if res['status'] == '0':
+            value = res['response']
+        else:
+            value = res['errors']
+        directory = os.getcwd()
+        file_name = '/data/register_data.json'
+        directory_name = directory + file_name
+        with open(directory_name, 'w') as fp:
+            json.dump(value, fp)
+
+    @keyword("level by API")
+    def level(self, region, user_id):
+        endpoint = endpoint_mfw
+        route = '/services/cms/level?'
+        url = endpoint + route
+        params = {'api_version': 'v5.92',
+                  'authpn': 'webclient',
+                  'authpt': 'tfg1h3j4k6fd7',
+                  'device_category': 'web',
+                  'device_manufacturer': 'generic',
+                  'device_model': 'web',
+                  'device_type': 'web',
+                  'format': 'json',
+                  'HKS': 'web60520c18b8113',
+                  'region': region,
+                  'user_id': user_id,
+                  'node': 'homeuser'}
+        response = self._get(url, params)
+        res = json.loads(response.text)
+        if res['status'] == '0':
+            value = res['response']
+        else:
+            value = res['errors']
+        directory = os.getcwd()
+        file_name = '/data/level_data.json'
+        directory_name = directory + file_name
+        with open(directory_name, 'w') as fp:
+            json.dump(value, fp)
+
+    @keyword("level internal by API")
+    def level_internal(self, region, user_hash):
+        #Sin terminar. Error, respuesta viene completamente vacía.
+        endpoint = endpoint_cvr
+        route = '/level?'
+        url = endpoint + route
+        params = {'hks': 'web60467cec0114e',
+                  'region': region,
+                  'user_hash': user_hash}
+        response = self._get(url, params)
+        #res = json.loads(response.text)
+        '''value = res['items']
+        directory = os.getcwd()
+        file_name = '/data/level_internal_data.json'
+        directory_name = directory + file_name
+        with open(directory_name, 'w') as fp:
+            json.dump(value, fp)'''
+        return response

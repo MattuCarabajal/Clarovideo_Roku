@@ -1,12 +1,14 @@
 import openpyxl
 
-
 def cerosAntesDeUnTexto(texto, cantidad_final):
     while len(texto) < cantidad_final:
         texto = "0" + texto
     return texto
 
-abrir_test= openpyxl.load_workbook('C:/Users/rjrodriguez/Documents/Test/tests_cases.xlsx')
+# Para ejecutar éste progrma botón derecho -> Run
+# El dato requerido es el nombre de la hoja, que es la seccion de donde se tomaran los test cases
+
+abrir_test= openpyxl.load_workbook('Aqui va la ruta de donde este el archivo del test plan /tests_cases.xlsx')
 Hoja= abrir_test['Registro1'] #Aqui va el nombre de la hoja
 A= Hoja['A']
 #print(A) #Imprimo el numero de celdas que contienen datos
