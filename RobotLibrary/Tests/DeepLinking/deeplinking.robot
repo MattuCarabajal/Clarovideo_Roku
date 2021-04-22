@@ -141,7 +141,6 @@ Resource        ./../Utilities/variables.robot
     ${result}=        Verificar inicio de contenido       ${current_time}
     Should Be True      ${result}
 
-
 08_0007_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_otro_episodio_no_haya_sido_finalizado_usando_launch_con_usuario_logueado
     [Tags]      CriticalRoute       Sprint9     HappyPath
     [Setup]     Send key    Home
@@ -157,8 +156,6 @@ Resource        ./../Utilities/variables.robot
     ${text}=        Get attr    attr    bounds    {0, 0, 735.667, 30}    text
     Assert Equal    ${text}     Domingo en el parque con Fran
 
-
-
 08_0009_DEEPLINKING_Acceder_con_deep_linking_a_una_vcard_de_una_serie_usando_season_usando_launch_con_usuario_logueado
     [Tags]      CriticalRoute       Sprint9     HappyPath
     [Setup]     Send key    Home
@@ -167,7 +164,6 @@ Resource        ./../Utilities/variables.robot
     #Verificar que cargo la VCard
     ${element}=     Element identifier by text   text   Menú
     Verify is screen loaded     ${element}
-
 
 08_0010_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_visualizada_previamente_usando_launch_sin_estar_logueado
     [Tags]      Intregracion_LastSeen
@@ -182,7 +178,6 @@ Resource        ./../Utilities/variables.robot
     ${current_time}=        Informacion player            Position
     ${result}=        Verificar inicio de contenido       ${current_time}
     Should Be True          ${result}
-
 
 08_0011_DEEPLINKING_Acceder_con_deep_linking_a_una_pelicula_no_finalizada_usando_el_launch_sin_estar_logueado
     [Tags]      Intregracion_LastSeen      NoreconoceKeyword
@@ -283,7 +278,6 @@ Resource        ./../Utilities/variables.robot
     ${result}=      Comparar tiempo de reproduccion      ${current_time}     ${current_new_time}
     Should Be True      ${result}
 
-
 08_0015_DEEPLINKING_Acceder_con_deep_linking_a_una_serie_cuyo_primer_episodio_haya_sido_finalizado_usando_el_launch_sin_estar_logueado
     [Tags]      IncompleteEncard
     [Setup]     Reabrir y logout
@@ -326,9 +320,6 @@ Resource        ./../Utilities/variables.robot
     ${text}=        Get attr    attr    bounds    {0, 0, 735.667, 30}    text
     Assert Equal    ${text}     Domingo en el parque con Fran
 
-
-
-
 08_0018_DEEPLINKING_Acceder_con_deep_linking_a_una_vcard_de_una_serie_usando_season_usando_el_launch_sin_estar_logueado
     [Tags]
     [Setup]     Reabrir y logout
@@ -340,6 +331,3 @@ Resource        ./../Utilities/variables.robot
     Sleep   10
     ${text}=        Get attr    attr    bounds    {0, 0, 735.667, 30}    text
     Assert Equal    ${text}     Domingo en el parque con Fran
-
-
-

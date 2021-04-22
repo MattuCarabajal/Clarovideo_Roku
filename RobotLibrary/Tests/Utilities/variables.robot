@@ -45,10 +45,12 @@ ${region}=                  mexico
 
 #Get Data
 ${login}=                   /data/login_data.json
-${register}=                /services/user/register?
+${register}=                /data/register_data.json
 ${purchase}=                /data/purchase_data.json
 ${getmedia}=                /data/getmedia_data.json
-${level}=                   /services/cms/level?
+${level}=                   /data/level_data.json
+${levelInternal}=           /data/level_internal_data.json
+#Las siguientes deben ser actualizadas como las anteriores, una vez finalizadas sus funciones
 ${levelUser}=               /services/cms/leveluser?
 ${favorited}=               /services/user/favorited?
 ${predictive}=              /services/search/predictive?
