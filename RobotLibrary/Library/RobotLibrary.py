@@ -357,6 +357,7 @@ class RobotLibrary:
         # Cerrar el navegador
         navigator.close()
 
+    #Devuelve el tiempo de Duracion o de posicion del player dependiendo de la key seleccionada
     @keyword("Informacion player")
     def info_player(self, key):
         response = self.getPlayerInfo()
@@ -365,6 +366,7 @@ class RobotLibrary:
         informacion = self._getMsFromString(value[key])
         return informacion
 
+    #Compara la posicion del player al acceder a un contenido dos veces
     @keyword('Comparar tiempo de reproduccion')
     def equal_times(self, tiempo_viejo, tiempo_nuevo):
         tiempo_viejo = int(tiempo_viejo)
@@ -374,18 +376,7 @@ class RobotLibrary:
         else:
             return False
 
-    @keyword("Adelantar hasta el final")
-    def adelantar(self, Duracion):
-        Position = int(self.info_player('Position'))
-        while Position < Duracion - 2000:
-            self.pressBtn('Fwd')
-            self.pressBtn('Fwd')
-            self.pressBtn('Fwd')
-            time.sleep(6)
-            self.pressBtn('Play')
-            Position = int(self.info_player('Position'))
-        time.sleep(2)
-
+    # Adelanta un contenido hasta el final
     @keyword("Adelantar")
     def adelantar(self, Duracion):
         Position = self.info_player('Position')

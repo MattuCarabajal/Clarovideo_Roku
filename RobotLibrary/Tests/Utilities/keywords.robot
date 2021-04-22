@@ -19,7 +19,7 @@ Login
     #Seleeccionar input "Usuario"
     Send key    Select
     #Ingresar usuario
-    Enter username      ${userMail_NoRents}
+    Enter username      ${userMail}
     #Ubicar y seleccionar input "Password"
     Send key    Down   1
     Send key    Select  1

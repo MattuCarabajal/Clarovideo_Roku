@@ -12,7 +12,9 @@ Test Teardown     Run if fails
 *** Test Cases ***
 Reproducir una pelicula desde el login seleccionando el contenido del carrusel
     [Tags]      CriticalRoute
+    #Acceder a la pagina de inicio de sesion
     Access Login
+    #Loguearse exitosamente
     Login
     Sleep   4
     #Ubicar y seleccionar película
@@ -26,7 +28,9 @@ Reproducir una pelicula desde el login seleccionando el contenido del carrusel
 Reproducir una serie desde el login seleccionando el contenido del carrusel
     [Tags]      CriticalRoute
     [Setup]     Reabrir y logout
+    #Acceder a la pagina de inicio de sesion
     Access Login
+    #Loguearse exitosamente
     Login
     Sleep    5
     Seleccionar serie
